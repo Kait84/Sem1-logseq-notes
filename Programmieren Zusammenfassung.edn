@@ -1,0 +1,2768 @@
+{:version 1,
+ :blocks
+ ({:block/id #uuid "6557389e-d137-4e82-87c5-abe8c1bda9f3",
+   :block/page-name "Bit-Operatoren",
+   :block/properties nil,
+   :block/format :markdown,
+   :block/children
+   ({:block/id #uuid "6557389e-e4ba-4c8f-a817-fdfcb79ea200",
+     :block/properties nil,
+     :block/format :markdown,
+     :block/children [],
+     :block/content "Arbeiten auf Bit Ebene"}
+    {:block/id #uuid "655738ae-8e9b-4acc-8f03-4dfd6042945e",
+     :block/properties nil,
+     :block/format :markdown,
+     :block/children
+     [{:block/id #uuid "655738b3-97f5-4ad9-83d5-6f0c2d2e7467",
+       :block/properties nil,
+       :block/format :markdown,
+       :block/children
+       [{:block/id #uuid "6557397f-f949-4c22-a78d-1cb217c1afc7",
+         :block/properties nil,
+         :block/format :markdown,
+         :block/children
+         [{:block/id #uuid "65573982-8c20-4c3f-856f-860c1f94dd9a",
+           :block/properties nil,
+           :block/format :markdown,
+           :block/children [],
+           :block/content "14 & 1 / 1110 & 0001 -> 0000"}],
+         :block/content "Bsp"}],
+       :block/content "UND-Operator: &"}
+      {:block/id #uuid "655738c0-0d63-4950-8790-f1eca113f9b1",
+       :block/properties nil,
+       :block/format :markdown,
+       :block/children
+       [{:block/id #uuid "65573a07-1bda-4b75-b9d7-b2c0c10b31a6",
+         :block/properties nil,
+         :block/format :markdown,
+         :block/children
+         [{:block/id #uuid "65573a09-f0c1-455f-9d98-df4d7c21845a",
+           :block/properties nil,
+           :block/format :markdown,
+           :block/children [],
+           :block/content "14 | 1 / 1110 | 0001 -> 1111"}],
+         :block/content "Bsp"}],
+       :block/content "ODER-Operator: |"}
+      {:block/id #uuid "655738c8-e036-455f-ad7c-e824143d460e",
+       :block/properties nil,
+       :block/format :markdown,
+       :block/children
+       [{:block/id #uuid "65573a40-afbf-48bf-8522-a54a728f2cec",
+         :block/properties nil,
+         :block/format :markdown,
+         :block/children
+         [{:block/id #uuid "65573a47-974d-4873-b90b-cc3e5bb42b7d",
+           :block/properties nil,
+           :block/format :markdown,
+           :block/children [],
+           :block/content "14 ^ 3 / 1110 ^ 0111 -> 1101"}],
+         :block/content "Bsp"}],
+       :block/content "Exklusives-Oder: ^"}
+      {:block/id #uuid "655738d4-aa1b-4e45-a3e4-2dac5b4505e0",
+       :block/properties nil,
+       :block/format :markdown,
+       :block/children
+       [{:block/id #uuid "65573abf-1ab8-4dbe-b374-30e4935ce92f",
+         :block/properties nil,
+         :block/format :markdown,
+         :block/children
+         [{:block/id #uuid "65573ac3-4635-42b2-a1e2-9d814d6c3fbd",
+           :block/properties nil,
+           :block/format :markdown,
+           :block/children [],
+           :block/content "a = 9 / a = 0000 1001"}
+          {:block/id #uuid "65573ad6-e313-4bac-a732-bbdb735e31c6",
+           :block/properties nil,
+           :block/format :markdown,
+           :block/children [],
+           :block/content "b = ~a / ~a = 1111 0110"}],
+         :block/content "Bsp"}],
+       :block/content "Negationsoperator: ~"}
+      {:block/id #uuid "65573911-024f-4dba-b6ab-140f446650c3",
+       :block/properties nil,
+       :block/format :markdown,
+       :block/children [],
+       :block/content
+       "Dürfen nur auf ganzzahlige Datentypen angewandt werden, ebenfalls empfohlen nur mit vorzeichlosen Datentypen (unsigned) arbeiten, da Compiler dies unterschiedlich interpretieren können"}
+      {:block/id #uuid "655739d3-3c45-45f9-8966-4b41fbe6d685",
+       :block/properties nil,
+       :block/format :markdown,
+       :block/children [],
+       :block/content
+       "einzelne Positionen werden eins zu eins verglichen"}],
+     :block/content "Operatoren für Bits"}
+    {:block/id #uuid "65573e75-0d1a-43cc-9557-cf7a9154fbe7",
+     :block/properties nil,
+     :block/format :markdown,
+     :block/children [],
+     :block/content ""}
+    {:block/id #uuid "65573aee-5bd2-4596-bdb0-9b3ed736017e",
+     :block/properties nil,
+     :block/format :markdown,
+     :block/children
+     [{:block/id #uuid "65573b73-ee9b-45d0-963d-08ecbec33012",
+       :block/properties nil,
+       :block/format :markdown,
+       :block/children [],
+       :block/content "Muster mit Löchern"}
+      {:block/id #uuid "65573b81-e250-4fa1-b11d-ff5520218424",
+       :block/properties nil,
+       :block/format :markdown,
+       :block/children [],
+       :block/content
+       "ermöglicht das genaue verändern von bestimmten Positionen auf Bit-Ebene"}],
+     :block/content "Masken"}
+    {:block/id #uuid "6557394e-25bd-4af6-9c49-8af397909932",
+     :block/properties nil,
+     :block/format :markdown,
+     :block/children
+     [{:block/id #uuid "65573b01-4607-45c1-87e8-0e48f3671a2d",
+       :block/properties nil,
+       :block/format :markdown,
+       :block/children [],
+       :block/content
+       "binäres Symbol , welches zwei Zustände hat (0 / 1)"}
+      {:block/id #uuid "65573b2f-28ee-4aaf-96ff-2bc631bb2edb",
+       :block/properties nil,
+       :block/format :markdown,
+       :block/children [],
+       :block/content "kann gesetzt, gelöscht oder gelesen werden"}
+      {:block/id #uuid "65573b46-dadd-43a3-8412-e07f5c830cab",
+       :block/properties nil,
+       :block/format :markdown,
+       :block/children [],
+       :block/content "Mit logischem ODER kann Flag gesetzt werde"}
+      {:block/id #uuid "65573dd1-88f2-41b2-aa45-9c6992d67b0d",
+       :block/properties nil,
+       :block/format :markdown,
+       :block/children
+       [{:block/id #uuid "65573bd6-f0e2-4ad6-bd29-bb41a9cdc26a",
+         :block/properties nil,
+         :block/format :markdown,
+         :block/children
+         [{:block/id #uuid "65573c46-9ed4-4780-bcd7-c5df1ea6f897",
+           :block/properties nil,
+           :block/format :markdown,
+           :block/children [],
+           :block/content "unsigned char a=0"}
+          {:block/id #uuid "65573c15-c45b-494f-986b-0156dbd99b82",
+           :block/properties nil,
+           :block/format :markdown,
+           :block/children [],
+           :block/content "a |= 0 / 0000 1000 setzt das 4 Bit"}],
+         :block/content "Bsp"}],
+       :block/content "Setzen eines Flags"}
+      {:block/id #uuid "65573cca-50f6-47ef-bd06-924290c14c2c",
+       :block/properties nil,
+       :block/format :markdown,
+       :block/children
+       [{:block/id #uuid "65573d2d-4994-4ba9-9e7e-ae2a9807abf9",
+         :block/properties nil,
+         :block/format :markdown,
+         :block/children [],
+         :block/content "1 bleiben gleich, 0 werden geändert"}
+        {:block/id #uuid "65573d37-b76a-4fbd-9d91-3271bfa6194e",
+         :block/properties nil,
+         :block/format :markdown,
+         :block/children
+         [{:block/id #uuid "65573cd5-0d1c-4dd8-b6a1-d6dd9be9f991",
+           :block/properties nil,
+           :block/format :markdown,
+           :block/children [],
+           :block/content "unsigend char a = 255"}
+          {:block/id #uuid "65573ced-c8e4-4bc4-9ade-d76e5364efd1",
+           :block/properties nil,
+           :block/format :markdown,
+           :block/children [],
+           :block/content
+           "a &= 247 / 1111 0111 setzt das 4 Bit auf 0"}],
+         :block/content "Bsp"}],
+       :block/content "Löschen eines Flags"}
+      {:block/id #uuid "65573d41-e9b3-495d-a910-606e7e47c461",
+       :block/properties nil,
+       :block/format :markdown,
+       :block/children
+       [{:block/id #uuid "65573d4a-89a7-47af-9c34-9f0b0e7d29ea",
+         :block/properties nil,
+         :block/format :markdown,
+         :block/children [],
+         :block/content
+         "1 wird geprüft, 0 werden maskiert (ausgeblendet)"}
+        {:block/id #uuid "65573dfc-3cb2-4955-b7fb-f987cdc8ab07",
+         :block/properties nil,
+         :block/format :markdown,
+         :block/children [],
+         :block/content
+         "Grund warum alles außer 0 eine wahr liefert, da bit-Überprüfung stattfindet"}
+        {:block/id #uuid "65573d61-86a6-4f92-a9d5-32a915ed2eb5",
+         :block/properties nil,
+         :block/format :markdown,
+         :block/children
+         [{:block/id #uuid "65573dc5-0b57-4906-be61-1bbfb45e5f02",
+           :block/properties nil,
+           :block/format :markdown,
+           :block/children [],
+           :block/content "unsigend char a = 255"}
+          {:block/id #uuid "65573d80-de3d-4f39-9d1b-515d5ff9e678",
+           :block/properties nil,
+           :block/format :markdown,
+           :block/children [],
+           :block/content
+           "if (a & 8) / 0000 1000 maskiert alle Bits, bis auf 4 Bit"}],
+         :block/content "Bsp"}],
+       :block/content "Lesen eines Flags"}
+      {:block/id #uuid "65573ed3-aef6-4b2b-884f-0ac38d0e13ba",
+       :block/properties nil,
+       :block/format :markdown,
+       :block/children
+       [{:block/id #uuid "65573ede-a42b-4945-bed2-a4f1a711864c",
+         :block/properties nil,
+         :block/format :markdown,
+         :block/children [],
+         :block/content
+         "1 werden invertiert, 0 bleiben unverändert in Maske"}
+        {:block/id #uuid "65573f06-0071-4a9f-9b84-8c67b8b99f3f",
+         :block/properties nil,
+         :block/format :markdown,
+         :block/children
+         [{:block/id #uuid "65573f09-fb83-4bdb-930f-696dcde67449",
+           :block/properties nil,
+           :block/format :markdown,
+           :block/children [],
+           :block/content "unsigend char a = 255"}
+          {:block/id #uuid "65573f13-a526-4d0c-a486-d8d10628e908",
+           :block/properties nil,
+           :block/format :markdown,
+           :block/children [],
+           :block/content
+           "a ^= 9 / 0000 1001 invertiert Bit 1 und Bit 4"}],
+         :block/content "Bsp"}],
+       :block/content "Invertieren eines Flags"}
+      {:block/id #uuid "65573cc2-dd1f-44b7-b607-a201ff7e2af5",
+       :block/properties nil,
+       :block/format :markdown,
+       :block/children
+       [{:block/id #uuid "65573ea2-b215-43e3-8d86-e5f5eb2af5f5",
+         :block/properties nil,
+         :block/format :markdown,
+         :block/children [],
+         :block/content "unsigend char a = 0"}
+        {:block/id #uuid "65573eb1-4086-4c2d-a357-0c8637bc3c7f",
+         :block/properties nil,
+         :block/format :markdown,
+         :block/children [],
+         :block/content "b = 0001 0011"}],
+       :block/content "Auch mögliche Schreibweise"}],
+     :block/content "Flag"}
+    {:block/id #uuid "65573ec3-d5e9-41a9-b2cc-0ecd58703eff",
+     :block/properties nil,
+     :block/format :markdown,
+     :block/children [],
+     :block/content ""}
+    {:block/id #uuid "65573f97-9590-4a2a-99dc-8bc10d30c4c1",
+     :block/properties nil,
+     :block/format :markdown,
+     :block/children
+     [{:block/id #uuid "65574164-41ac-4a89-aeb9-8f4d36ad872a",
+       :block/properties nil,
+       :block/format :markdown,
+       :block/children [],
+       :block/content "Operation Zeichen : << oder >>"}
+      {:block/id #uuid "65573f9b-05a1-4ea6-a411-4600078e72a6",
+       :block/properties nil,
+       :block/format :markdown,
+       :block/children [],
+       :block/content "Links oder Rechts-Shift"}
+      {:block/id #uuid "65573fa6-7594-4f18-821b-641e7647a53c",
+       :block/properties nil,
+       :block/format :markdown,
+       :block/children [],
+       :block/content
+       "Verschieben von Bits um ganzzahlige positive Stelle von Bits"}
+      {:block/id #uuid "65573fc1-3d07-47fd-a90a-93ffd9030aaa",
+       :block/properties nil,
+       :block/format :markdown,
+       :block/children [],
+       :block/content
+       "Shift Operationen wirken wie Multiplikationen bzw. Divisionen mit Potenz von 2"}
+      {:block/id #uuid "65573ff4-fd58-433e-8a1f-d1c1cceea20b",
+       :block/properties nil,
+       :block/format :markdown,
+       :block/children [],
+       :block/content "Extrem schnell"}
+      {:block/id #uuid "6557400c-0394-453e-a1f0-4338a1dfa76d",
+       :block/properties nil,
+       :block/format :markdown,
+       :block/children
+       [{:block/id #uuid "65574012-f13f-4880-be3c-edd4a58b5167",
+         :block/properties nil,
+         :block/format :markdown,
+         :block/children [],
+         :block/content "00100010"}
+        {:block/id #uuid "65574018-858c-4cdc-ab62-acdf52d9f3b8",
+         :block/properties nil,
+         :block/format :markdown,
+         :block/children [],
+         :block/content "01000100"}],
+       :block/content "Bsp Links-Shift"}
+      {:block/id #uuid "65574023-2d3f-4bf0-a8ff-1a4453799a54",
+       :block/properties nil,
+       :block/format :markdown,
+       :block/children
+       [{:block/id #uuid "6557402b-73bf-4064-a0b6-520a68c8e48f",
+         :block/properties nil,
+         :block/format :markdown,
+         :block/children [],
+         :block/content "00100001"}
+        {:block/id #uuid "65574032-c75b-4fb2-9226-9474ba6a57f3",
+         :block/properties nil,
+         :block/format :markdown,
+         :block/children [],
+         :block/content "00001000"}],
+       :block/content "Bsp 2-fach Rechts-Shift"}
+      {:block/id #uuid "6557403b-1def-48cd-a6ec-2a219e76714b",
+       :block/properties nil,
+       :block/format :markdown,
+       :block/children [],
+       :block/content
+       "1 können beim shiften verloren gehen, es wird mit 0 aufgefüllt"}
+      {:block/id #uuid "655740c2-0436-4b72-9fb8-460d93af01da",
+       :block/properties nil,
+       :block/format :markdown,
+       :block/children
+       [{:block/id #uuid "655740c9-ea25-4e12-ba15-29a1a0f4ab3d",
+         :block/properties nil,
+         :block/format :markdown,
+         :block/children [],
+         :block/content "Zahl: 100 00 * 10"}
+        {:block/id #uuid "655740d4-5a7a-4bcf-84db-8b55dc1b10ac",
+         :block/properties nil,
+         :block/format :markdown,
+         :block/children [],
+         :block/content "1000 00"}
+        {:block/id #uuid "655740dd-c9a0-40a7-8f3d-180c848d458e",
+         :block/properties nil,
+         :block/format :markdown,
+         :block/children [],
+         :block/content
+         "einfach linkshift im Dezimalsystem, selbes bei division (rechtsshift)"}
+        {:block/id #uuid "6557410f-fce0-4fda-a3a4-6acfde3bc394",
+         :block/properties nil,
+         :block/format :markdown,
+         :block/children
+         [{:block/id #uuid "65574115-8897-4161-a5c0-e3c01fc00cba",
+           :block/properties nil,
+           :block/format :markdown,
+           :block/children
+           [{:block/id #uuid "65574123-5440-4bf7-a4d3-ab6ad8f10718",
+             :block/properties nil,
+             :block/format :markdown,
+             :block/children [],
+             :block/content
+             "Multiplikation mit 2 bei 1-fachen linksshift"}
+            {:block/id #uuid "65574136-f6ec-434d-b18c-299befd24d7d",
+             :block/properties nil,
+             :block/format :markdown,
+             :block/children [],
+             :block/content
+             "bei 2-fachen linksshift: Multiplikation mit 4"}],
+           :block/content "Eine Position nach links"}],
+         :block/content "im Binärsystem"}],
+       :block/content "Bsp Multplikation"}
+      {:block/id #uuid "6557419a-eae8-48a4-8aae-72425376077c",
+       :block/properties nil,
+       :block/format :markdown,
+       :block/children
+       [{:block/id #uuid "655741bc-3585-4d8f-ab94-04f7c4b53fc4",
+         :block/properties nil,
+         :block/format :markdown,
+         :block/children [],
+         :block/content
+         "Bei Multiplikation / Division mit negativen Zahlen, kommt es auf den Compiler an wie Vorzeichen gehandhabt werden"}],
+       :block/content "Achtung"}],
+     :block/content "Shift Operatoren"})}
+  {:block/id #uuid "654dfb9e-b75c-4766-aec8-b1b896389bf4",
+   :block/page-name "Komplexe Datentypen",
+   :block/properties nil,
+   :block/format :markdown,
+   :block/children
+   ({:block/id #uuid "654dfb9e-1a6c-41d1-95c0-c854486fef87",
+     :block/properties nil,
+     :block/format :markdown,
+     :block/children
+     [{:block/id #uuid "654dfba4-235d-450c-986f-68f9db17f6cd",
+       :block/properties nil,
+       :block/format :markdown,
+       :block/children [],
+       :block/content "Datentyp mit endlicher Datenmenge"}
+      {:block/id #uuid "654dfbbb-859d-4414-8888-fb32a70f0f40",
+       :block/properties nil,
+       :block/format :markdown,
+       :block/children [],
+       :block/content "enumeration (Kurz enum)"}
+      {:block/id #uuid "654dfbda-c709-4a0b-92f1-8fa9f5d76bb1",
+       :block/properties nil,
+       :block/format :markdown,
+       :block/children [],
+       :block/content
+       "```c\nenum Monate {JAN = 1, FEB, MAE, APR, MAI, JUN, JUL,\nAUG, SEP, OKT, NOV, DEZ};\n```"}
+      {:block/id #uuid "654dfc19-e1f9-4290-a096-bd748cc3dcde",
+       :block/properties nil,
+       :block/format :markdown,
+       :block/children [],
+       :block/content "Reihenfolge kann selbst definiert werden"}
+      {:block/id #uuid "654dfcd4-a798-4349-a9ca-f0c4c3952735",
+       :block/properties nil,
+       :block/format :markdown,
+       :block/children [],
+       :block/content
+       "Es wäre egal ob man über DEZ drüberrechnen würde, macht das c nichts, da im Hintergrund int dahintersteht, somit existiert der Datentyp eigentlich nicht."}
+      {:block/id #uuid "654dfe18-8eb4-4b58-bfad-aad70cf05ed8",
+       :block/properties nil,
+       :block/format :markdown,
+       :block/children
+       [{:block/id #uuid "654dfe52-bb6d-4330-a914-9c33dbfbffa3",
+         :block/properties nil,
+         :block/format :markdown,
+         :block/children [],
+         :block/content "z.B."}
+        {:block/id #uuid "654dfe63-681a-436d-b263-449bb7c9c49a",
+         :block/properties nil,
+         :block/format :markdown,
+         :block/children [],
+         :block/content "enum bool {false, true}"}],
+       :block/content
+       "geeignet um Konstanten darzustellen, also alternative zu # define"}
+      {:block/id #uuid "654dfe87-6e2e-47de-88ba-d4ffd1e56a6b",
+       :block/properties nil,
+       :block/format :markdown,
+       :block/children [],
+       :block/content
+       "Es findet keine Typprüfung durch den Compiler statt"}],
+     :block/content "Aufzählungstyp"}
+    {:block/id #uuid "654dfecd-e40a-442a-bd0a-93b7b444c187",
+     :block/properties nil,
+     :block/format :markdown,
+     :block/children [],
+     :block/content ""}
+    {:block/id #uuid "654dff53-367a-4403-99ba-05ae0ff7940a",
+     :block/properties nil,
+     :block/format :markdown,
+     :block/children
+     [{:block/id #uuid "654dff5b-3816-4cb4-a668-e224d4ebfbb8",
+       :block/properties nil,
+       :block/format :markdown,
+       :block/children [],
+       :block/content "entspricht dem Produkttyp aus GDI"}
+      {:block/id #uuid "654dffe5-1766-42ac-894f-9e3463764398",
+       :block/properties nil,
+       :block/format :markdown,
+       :block/children [],
+       :block/content "ist ein zusammengesetzter Datentyp"}
+      {:block/id #uuid "654dfff6-6d20-4013-891a-dd052e621555",
+       :block/properties nil,
+       :block/format :markdown,
+       :block/children [],
+       :block/content
+       "Zählt hintereinander die einzelnen komponententypen auf"}
+      {:block/id #uuid "654e00da-379c-463f-adbe-d9d43a01056a",
+       :block/properties nil,
+       :block/format :markdown,
+       :block/children [],
+       :block/content "können inereinander definiert werden"}
+      {:block/id #uuid "655119ad-6bcf-40cb-a8cf-7de3ee58e96a",
+       :block/properties nil,
+       :block/format :markdown,
+       :block/children [],
+       :block/content
+       "Besitzen keinen Konstruktor und Variablen werden über einzelne Selektoren konstruiert"}
+      {:block/id #uuid "654e021c-7542-4274-8a22-85694f7551ef",
+       :block/properties nil,
+       :block/format :markdown,
+       :block/children [],
+       :block/content ""}
+      {:block/id #uuid "654e003d-b6a3-45c2-ab2e-38097e09fe71",
+       :block/properties nil,
+       :block/format :markdown,
+       :block/children
+       [{:block/id #uuid "654e0030-6f51-43c3-a992-3bc7b135848d",
+         :block/properties nil,
+         :block/format :markdown,
+         :block/children [],
+         :block/content
+         "```c\nstruct adresse {\nchar strasse [20];\nint hausnummer;\nint postleitzahl;\nchar stadt [20];\n};\n```"}
+        {:block/id #uuid "654e029e-cf7d-4e7d-b1cd-ab1b189563b1",
+         :block/properties nil,
+         :block/format :markdown,
+         :block/children [],
+         :block/content
+         "Selektion mit \".\", ohne Bengrenzung möglich"}
+        {:block/id #uuid "654e0334-6f19-4525-a0ec-9729f59e04c2",
+         :block/properties nil,
+         :block/format :markdown,
+         :block/children [],
+         :block/content
+         "Wichtig es muss immer die Adresse und nicht den Datentyp (adresse) bei Mehrfachverschachtelung von structs selektieren"}
+        {:block/id #uuid "654e02ad-8dde-4f9c-b8e7-29dc807eb16a",
+         :block/properties nil,
+         :block/format :markdown,
+         :block/children
+         [{:block/id #uuid "654e02b2-b45c-4025-9e16-6a606a293b3a",
+           :block/properties nil,
+           :block/format :markdown,
+           :block/children [],
+           :block/content "adresse.stadt"}
+          {:block/id #uuid "654e037f-3bb5-4a2a-b892-b1cbeff42237",
+           :block/properties nil,
+           :block/format :markdown,
+           :block/children [],
+           :block/content "student.wohnort.statd[2] = 'a'"}
+          {:block/id #uuid "654e03d9-0962-45e4-b3a1-a7c2811f4b48",
+           :block/properties nil,
+           :block/format :markdown,
+           :block/children [],
+           :block/content
+           "wohnort ist auch ein struct mit dem typ addresse"}],
+         :block/content "Bsp."}
+        {:block/id #uuid "654e02bd-3b24-4d4f-bc09-af3134edbc73",
+         :block/properties nil,
+         :block/format :markdown,
+         :block/children [],
+         :block/content
+         "Achtung beim Speicher können bei einem Struct Lücken entstehen aufgrund alignment (wird gemacht, da CPU schneller ist wenns immer auf 4 Addressen zugreift)"}
+        {:block/id #uuid "654e06e2-aaa5-4235-b2ad-49643745c53e",
+         :block/properties nil,
+         :block/format :markdown,
+         :block/children [],
+         :block/content
+         "zur Ermitlung der Speichergröße kann sizeof(struct student) verwendet werden, sizeof berücksichtigt diese Lücken -> Nicht blind zählen"}],
+       :block/content "Bsp"}
+      {:block/id #uuid "654e06fa-cf23-44cc-ab64-18d151f13b9a",
+       :block/properties nil,
+       :block/format :markdown,
+       :block/children [],
+       :block/content
+       "Bei Vergleichen muss jedes Element einzeln verglichen werden, da der stuct 1 woanders liegt als struct 2 -> Empfohlen eine eigene Vergleichsfunktion zu schreiben"}
+      {:block/id #uuid "654e084d-b7c4-4d4c-9e97-e721ec1b6c14",
+       :block/properties nil,
+       :block/format :markdown,
+       :block/children
+       [{:block/id #uuid "654e08e0-1691-4d9a-9f17-22288c32869a",
+         :block/properties nil,
+         :block/format :markdown,
+         :block/children
+         [{:block/id #uuid "654e0994-8f18-436e-a812-af0b1dc06e83",
+           :block/properties nil,
+           :block/format :markdown,
+           :block/children [],
+           :block/content "(*pointer_struct).x"}
+          {:block/id #uuid "654e099f-9711-46ad-b687-0ec11f2df374",
+           :block/properties nil,
+           :block/format :markdown,
+           :block/children [],
+           :block/content "Abkürzung  pointer_struct->x"}],
+         :block/content
+         "Addresse muss bei Selektion extra dereferenziert werden"}],
+       :block/content
+       "Struct wird Wert für Wert übergeben, somit braucht man Pointer wenn Platz gespart werden soll"}
+      {:block/id #uuid "654e09a9-14c7-404e-8c9b-52bf317df0af",
+       :block/properties nil,
+       :block/format :markdown,
+       :block/children [],
+       :block/content
+       "Systemzeit kann in C mit der Struktur tm (importiert aus time.h). Jahr z.B. int tm_year, alles von 1. Januar 1970 aus gerechnet"}],
+     :block/content "Strukturetyp"}
+    {:block/id #uuid "654e07f5-0c53-45eb-9a46-a05cdc09bae3",
+     :block/properties nil,
+     :block/format :markdown,
+     :block/children [],
+     :block/content ""}
+    {:block/id #uuid "65523d9f-04ea-49ad-b3aa-7440c0556620",
+     :block/properties nil,
+     :block/format :markdown,
+     :block/children
+     [{:block/id #uuid "65523de2-93ab-498f-a897-b98c02f392e4",
+       :block/properties nil,
+       :block/format :markdown,
+       :block/children
+       [{:block/id #uuid "65523eae-3e76-4691-a35c-91fe917fa660",
+         :block/properties nil,
+         :block/format :markdown,
+         :block/children [],
+         :block/content "Typ vario kann char, int oder float sein"}
+        {:block/id #uuid "65523edf-1516-414c-9b2c-c5eb1c6ae37a",
+         :block/properties nil,
+         :block/format :markdown,
+         :block/children [],
+         :block/content ""}
+        {:block/id #uuid "65523e77-64d9-40ba-aee5-37c3d9a19cf6",
+         :block/properties nil,
+         :block/format :markdown,
+         :block/children [],
+         :block/content
+         "```c\n// Syntax\nunion vario {\n\tchar charnam;\n\tint intnam;\n\tfloat floatnam;\n};\nunion vario variante;\n```"}],
+       :block/content
+       "ermöglicht die initialisierung einer Variable mit verschiedenen Datentypen (z.B. int oder char)"}
+      {:block/id #uuid "65523e9b-4a53-4a1b-8adf-2be3dc01cbc6",
+       :block/properties nil,
+       :block/format :markdown,
+       :block/children [],
+       :block/content "Zugriff über Selektor \".\""}
+      {:block/id #uuid "65523fa5-b489-4248-9c5f-b522b9722f5e",
+       :block/properties nil,
+       :block/format :markdown,
+       :block/children
+       [{:block/id #uuid "6552419a-4af3-43d1-a14e-da263f1ea029",
+         :block/properties nil,
+         :block/format :markdown,
+         :block/children [],
+         :block/content
+         "Überprüfung über enum, enthält alle möglichen Datentypen"}
+        {:block/id #uuid "655241b4-6171-42db-8412-72a47991c04f",
+         :block/properties nil,
+         :block/format :markdown,
+         :block/children [],
+         :block/content
+         "struct welcher eine anonyme union und das enum enthält"}
+        {:block/id #uuid "655241fb-793d-43fe-abc0-6ac8682a0fde",
+         :block/properties nil,
+         :block/format :markdown,
+         :block/children [],
+         :block/content
+         "Das enum ist wie ein \"Tag\" welcher den Datentypen des unions enthält (muss trotzdem einmal beim initialisierung festgelegt werden)"}
+        {:block/id #uuid "65524233-fa97-4a21-b80b-59c2483cf098",
+         :block/properties nil,
+         :block/format :markdown,
+         :block/children [],
+         :block/content "Siehe Seite 176"}],
+       :block/content
+       "Achtung typ muss selber gemerkt werden -> C überprüft nicht ob richtiger Datentyp verwendet wird und keine Prüfung nicht standardmäßig in C enthalten"}
+      {:block/id #uuid "65523fc7-695d-44fc-9f7c-40aadddb6843",
+       :block/properties nil,
+       :block/format :markdown,
+       :block/children [],
+       :block/content "Zuweisung normal, bei gleichen Vereinigungstyp"}
+      {:block/id #uuid "65524034-68c6-43ec-9a7a-5fdc3a607823",
+       :block/properties nil,
+       :block/format :markdown,
+       :block/children
+       [{:block/id #uuid "6552407a-5cf0-44c0-882c-be4a5552d94c",
+         :block/properties nil,
+         :block/format :markdown,
+         :block/children [],
+         :block/content
+         "sizeof Operator liefert den Speicherbedarf in Bytes"}],
+       :block/content
+       "eine Union verwendet immer den größten Datentyp in der Union, egal was eingespeichert wird"}
+      {:block/id #uuid "65524097-c0fd-406e-b0f2-45bf8ff161f9",
+       :block/properties nil,
+       :block/format :markdown,
+       :block/children [],
+       :block/content
+       "Achtung Unions können nicht mit \"==\" verglichen werden, muss wie bei structs selbst mit Selektor gebaut werden"}
+      {:block/id #uuid "6552414f-9241-4697-8214-6549b7edac77",
+       :block/properties nil,
+       :block/format :markdown,
+       :block/children [],
+       :block/content "Operator \"->\" ist ebenfalls möglich"}
+      {:block/id #uuid "655242d5-317e-4f5c-921b-abd04b29ec3f",
+       :block/properties nil,
+       :block/format :markdown,
+       :block/children [],
+       :block/content
+       "Eher häufig verwendet bei maschinennaher Programmierung verwendet (z.B. Systembibiolothek von C)"}
+      {:block/id #uuid "6552435d-c7fe-4c4a-b5c4-4477f4053284",
+       :block/properties nil,
+       :block/format :markdown,
+       :block/children [],
+       :block/content
+       "Datentyp kann während Programmablauf geändert werden, mit Wertänderung"}],
+     :block/content "Vereinigungstyp (Union)"}
+    {:block/id #uuid "6552472d-5da7-411c-bbac-8e489a602689",
+     :block/properties nil,
+     :block/format :markdown,
+     :block/children [],
+     :block/content ""}
+    {:block/id #uuid "655243d7-3a59-4775-99f2-e7ef6f16af6c",
+     :block/properties nil,
+     :block/format :markdown,
+     :block/children
+     [{:block/id #uuid "655243dd-b6a7-4b76-9b07-9320048108d4",
+       :block/properties nil,
+       :block/format :markdown,
+       :block/children
+       [{:block/id #uuid "65524403-927b-4745-b38b-f1c9215bdbbb",
+         :block/properties nil,
+         :block/format :markdown,
+         :block/children [],
+         :block/content
+         "Kleinster Byte Wert: Char, mit 1 Byte -> Verschwendung von 7 Byte (Bei boolean)"}
+        {:block/id #uuid "6552442a-234e-486e-b768-7c7f75884469",
+         :block/properties nil,
+         :block/format :markdown,
+         :block/children [],
+         :block/content "Bitgröße kann verändert werden"}],
+       :block/content "Idee:"}
+      {:block/id #uuid "65524451-68ac-42a3-98b4-fd49d77c0afc",
+       :block/properties nil,
+       :block/format :markdown,
+       :block/children [],
+       :block/content "Immer eine Kombination aus Strukturen"}
+      {:block/id #uuid "65524464-a207-463f-9261-82c839beb5a4",
+       :block/properties nil,
+       :block/format :markdown,
+       :block/children
+       [{:block/id #uuid "65524486-9864-419e-b8a1-442fe332188d",
+         :block/properties nil,
+         :block/format :markdown,
+         :block/children [],
+         :block/content "zahl1 = größe des Bitfelds"}
+        {:block/id #uuid "65524569-b8f5-4223-9ce5-9db300662534",
+         :block/properties nil,
+         :block/format :markdown,
+         :block/children [],
+         :block/content
+         "a, b,... liegen kompakt beeinander (Siehe 181)"}
+        {:block/id #uuid "655245ef-5191-4e2c-ac53-54db29213f79",
+         :block/properties nil,
+         :block/format :markdown,
+         :block/children
+         [{:block/id #uuid "655245f7-1ace-4894-b73f-17d0d831bc8d",
+           :block/properties nil,
+           :block/format :markdown,
+           :block/children [],
+           :block/content
+           "es können Lücken erzeugt werden z.B. \" :2;\""}
+          {:block/id #uuid "65524624-858f-40db-b1b7-d1dca18fc90e",
+           :block/properties nil,
+           :block/format :markdown,
+           :block/children [],
+           :block/content
+           "Grund: Bits hatten früher Bedeutung, heute nicht mehr"}],
+         :block/content "Achtung"}],
+       :block/content
+       "```c\n// Syntax\ntype var:zahl;\n\n// Festlegen eines Structs mit Bitfeld\nstruct Bitfeld_Struktur_1 {\n\tunsigned a:3;\n\tunsigned b:4;\n\tunsigned c:2;\n\tunsigned d:8;\n};\n```"}
+      {:block/id #uuid "655244a0-8d5f-4ebb-8ae2-b51851d5476d",
+       :block/properties nil,
+       :block/format :markdown,
+       :block/children [],
+       :block/content
+       "Bei Bereichsüberschreitung gehen Informationen verloren (Siehe 180)"}
+      {:block/id #uuid "655244ea-5695-4c1a-96bc-43cd05c81909",
+       :block/properties nil,
+       :block/format :markdown,
+       :block/children [],
+       :block/content
+       "Bei Bitfeld signed, wird das erste Bit, ein Vorzeichenbit"}
+      {:block/id #uuid "65524506-c203-4680-8bee-47e5c7ecda1e",
+       :block/properties nil,
+       :block/format :markdown,
+       :block/children [],
+       :block/content
+       "Ergibt nur mit structs einen Sinn, da normale Datentyp nicht selber verändert werden kann, nur bei structs möglich"}
+      {:block/id #uuid "655245ad-1a58-4f35-929e-783c1c606cc8",
+       :block/properties nil,
+       :block/format :markdown,
+       :block/children [],
+       :block/content
+       "Selektor mit \".\", auf Bitebene -> Besonders Effektiv für maschinennahe Programmierung"}
+      {:block/id #uuid "65524677-5b00-4df1-8616-721d2db127d5",
+       :block/properties nil,
+       :block/format :markdown,
+       :block/children [],
+       :block/content
+       "Kein ISO Standard -> Compiler-Hersteller selbst überlassen wie es im Speicher abgelegt wird"}
+      {:block/id #uuid "655246a5-7bc3-4403-aaa2-03c410f8ac12",
+       :block/properties nil,
+       :block/format :markdown,
+       :block/children [],
+       :block/content
+       "Kein Addressoperator mehr, da nur ganze Speicherzellen addressiert werden können"}
+      {:block/id #uuid "65524541-f171-4f59-92d0-0faf00e05be5",
+       :block/properties nil,
+       :block/format :markdown,
+       :block/children [],
+       :block/content ""}],
+     :block/content "Bitfelder"}
+    {:block/id #uuid "65524728-fc42-4cb5-af77-e791c362197d",
+     :block/properties nil,
+     :block/format :markdown,
+     :block/children [],
+     :block/content ""}
+    {:block/id #uuid "65524728-3c03-4034-bb66-918988c0e98c",
+     :block/properties nil,
+     :block/format :markdown,
+     :block/children
+     [{:block/id #uuid "65524735-9a7a-4b05-a224-d66c84c332d6",
+       :block/properties nil,
+       :block/format :markdown,
+       :block/children [],
+       :block/content
+       "Ermöglicht die Definition eines Aliasnamen für einen Datentypen z.B. anstatt int -> i"}
+      {:block/id #uuid "6552476b-ae85-4df3-9c7f-c098b569d088",
+       :block/properties nil,
+       :block/format :markdown,
+       :block/children [],
+       :block/content
+       "Keine Textersetzung (nicht wie Präprozessor), sondern wirklich eigener Datentyp"}
+      {:block/id #uuid "65524810-4412-4c21-b9ee-01715ae2b115",
+       :block/properties nil,
+       :block/format :markdown,
+       :block/children
+       [{:block/id #uuid "65524814-2bcd-4357-81da-61e4ba0aa904",
+         :block/properties nil,
+         :block/format :markdown,
+         :block/children [],
+         :block/content
+         "typedef unsigend char u_int_8 (unsigend char hat 8 bit)"}
+        {:block/id #uuid "65524836-642e-4c43-9df5-0a55639bc3d5",
+         :block/properties nil,
+         :block/format :markdown,
+         :block/children [],
+         :block/content
+         "für u_int_16, meist short (manchmal int, je nach PC)"}
+        {:block/id #uuid "65524887-06ac-4e5b-94b3-467636112088",
+         :block/properties nil,
+         :block/format :markdown,
+         :block/children [],
+         :block/content
+         "Vorteil: System wird einmal mit sizeof überprüft und kann dann an einer Stelle geändert werden"}],
+       :block/content "Beispiel"}
+      {:block/id #uuid "65524832-24cc-42c8-b819-33f26a0ba297",
+       :block/properties nil,
+       :block/format :markdown,
+       :block/children [],
+       :block/content
+       "Interessant für structs, da struct nicht mehr angegeben werden müssen"}
+      {:block/id #uuid "65524940-1c42-4d31-a9fc-4b7e723d4902",
+       :block/properties nil,
+       :block/format :markdown,
+       :block/children [],
+       :block/content
+       "Annonyme struct ist möglich indem der name der struct als datentyp verwendet wird (S.186, aber ohne point)"}
+      {:block/id #uuid "6552497b-6437-4fb7-b5f3-2b617f6e56da",
+       :block/properties nil,
+       :block/format :markdown,
+       :block/children [],
+       :block/content
+       "Kann auch später für struct definiert werden (struct nicht anonym)"}],
+     :block/content "Typedef"}
+    {:block/id #uuid "65524996-ceb6-42df-9abd-2bd828cafc2b",
+     :block/properties nil,
+     :block/format :markdown,
+     :block/children [],
+     :block/content ""}
+    {:block/id #uuid "65524a53-8240-4397-8e94-000015da346f",
+     :block/properties nil,
+     :block/format :markdown,
+     :block/children
+     [{:block/id #uuid "65524a5a-3383-471a-9b2e-c6a63582dcd5",
+       :block/properties nil,
+       :block/format :markdown,
+       :block/children
+       [{:block/id #uuid "65524a70-0f19-47fb-b3ac-b8f1ff442f84",
+         :block/properties nil,
+         :block/format :markdown,
+         :block/children [],
+         :block/content "Integertypen, Gleitpunkttypen"}],
+       :block/content "Elementare Typen"}
+      {:block/id #uuid "65524a63-a3aa-449f-b6a7-dfe5478557c2",
+       :block/properties nil,
+       :block/format :markdown,
+       :block/children [],
+       :block/content "Abgeleiteter Typen"}],
+     :block/content "Unterscheidung Datentypen (siehe 188)"}
+    {:block/id #uuid "6552472e-daec-490d-8f29-25a4769643c7",
+     :block/properties nil,
+     :block/format :markdown,
+     :block/children [],
+     :block/content ""})}
+  {:block/id #uuid "6364c7ac-1110-4f23-adaa-d8a575af253e",
+   :block/page-name "Contents",
+   :block/properties nil,
+   :block/children
+   ({:block/id #uuid "6543ceb1-5191-449f-b309-9b4ee2b55128",
+     :block/properties nil,
+     :block/format :markdown,
+     :block/children [],
+     :block/content ""})}
+  {:block/id #uuid "6557432b-cf9c-4065-a6c4-d6134b1ef312",
+   :block/page-name "Dynamische Speicherzuweisung",
+   :block/properties nil,
+   :block/format :markdown,
+   :block/children
+   ({:block/id #uuid "6557432b-3386-4512-8e3c-d55a1788d583",
+     :block/properties nil,
+     :block/format :markdown,
+     :block/children [],
+     :block/content
+     "Unterschied zwischen statischen und dynamischen Variablen"}
+    {:block/id #uuid "655b7761-2e82-4c76-8203-f69379f6eb42",
+     :block/properties nil,
+     :block/format :markdown,
+     :block/children
+     [{:block/id #uuid "655b7777-a19d-4978-8385-24dc3d218d13",
+       :block/properties nil,
+       :block/format :markdown,
+       :block/children [],
+       :block/content
+       "Lebensdauer der Variable wird vom Block (z.B. Funktionsblock) bestimmt"}],
+     :block/content "statische Variable"}
+    {:block/id #uuid "655b7762-6cd3-4e8e-aa72-9b81f6c08c7a",
+     :block/properties nil,
+     :block/format :markdown,
+     :block/children
+     [{:block/id #uuid "655b77c1-dbc9-4078-843d-70aa0603dcef",
+       :block/properties nil,
+       :block/format :markdown,
+       :block/children [],
+       :block/content "Variable wird dynamisch angelegt oder gelöscht"}
+      {:block/id #uuid "655b77cf-c9ed-4571-925c-61574a6afaca",
+       :block/properties nil,
+       :block/format :markdown,
+       :block/children [],
+       :block/content
+       "während Programmablauf wird entschieden wann die Variable existiert"}
+      {:block/id #uuid "655b77e8-ebf2-4f75-8462-f7828ade9380",
+       :block/properties nil,
+       :block/format :markdown,
+       :block/children [],
+       :block/content "unabhängig zur Blockstruktur"}
+      {:block/id #uuid "655b77f7-eca9-45a1-a51b-dbc429c2f34c",
+       :block/properties nil,
+       :block/format :markdown,
+       :block/children
+       [{:block/id #uuid "655b7801-1d94-41d2-ab2a-b31cf0fad079",
+         :block/properties nil,
+         :block/format :markdown,
+         :block/children [],
+         :block/content "sind anonyme Variablen"}
+        {:block/id #uuid "655b7807-c379-4994-9e11-e20c651e90bc",
+         :block/properties nil,
+         :block/format :markdown,
+         :block/children [],
+         :block/content "nicht über Name ansprechbar"}
+        {:block/id #uuid "655b7820-5beb-47c4-ac47-2f21b2611dbf",
+         :block/properties nil,
+         :block/format :markdown,
+         :block/children [],
+         :block/content "Abgelegt im Heap des Arbeitsspeichers"}],
+       :block/content "Def"}],
+     :block/content "dynamische Variable"}
+    {:block/id #uuid "655b782d-2e29-4c8f-98bd-28c014532310",
+     :block/properties nil,
+     :block/format :markdown,
+     :block/children [],
+     :block/content ""}
+    {:block/id #uuid "655b783a-f3bc-407d-bd9a-b51b7dbe478a",
+     :block/properties nil,
+     :block/format :markdown,
+     :block/children
+     [{:block/id #uuid "655b7844-8b3d-4801-beb3-6e2c06b529e1",
+       :block/properties nil,
+       :block/format :markdown,
+       :block/children
+       [{:block/id #uuid "655b785a-b639-4336-a41e-f69733e5655f",
+         :block/properties nil,
+         :block/format :markdown,
+         :block/children
+         [{:block/id #uuid "655b7a1f-f62b-44bc-96c5-854a3c0fe7b2",
+           :block/properties nil,
+           :block/format :markdown,
+           :block/children [],
+           :block/content "def Variablen liegen im Code"}],
+         :block/content "Code (Programmtext)"}
+        {:block/id #uuid "655b7861-814a-4cf9-a437-d4c28fc3f015",
+         :block/properties nil,
+         :block/format :markdown,
+         :block/children
+         [{:block/id #uuid "655b7888-a99c-4bc3-a43d-ccf913316be7",
+           :block/properties nil,
+           :block/format :markdown,
+           :block/children [],
+           :block/content
+           "alle Variablen die der gesammten Lebensdauer erhalten sind (globale Variable)"}
+          {:block/id #uuid "655b78a1-bf62-4571-bbc8-ec62f6e04f81",
+           :block/properties nil,
+           :block/format :markdown,
+           :block/children [],
+           :block/content
+           "Anzahl der Variablen ändert sich nicht, statische Variablen"}
+          {:block/id #uuid "655b7a33-dc4a-4dbd-b5a1-86953b258946",
+           :block/properties nil,
+           :block/format :markdown,
+           :block/children [],
+           :block/content
+           "const Variablen liegen im Datensegment, wenn global definiert"}],
+         :block/content "Daten (-segment)"}
+        {:block/id #uuid "655b789b-377a-4121-ad49-772aad79261a",
+         :block/properties nil,
+         :block/format :markdown,
+         :block/children
+         [{:block/id #uuid "655b78d2-967d-462e-9380-2deafc638580",
+           :block/properties nil,
+           :block/format :markdown,
+           :block/children [],
+           :block/content
+           "dynamische Erstellung von Variablen während Programmlaufzeit"}
+          {:block/id #uuid "655b79e3-3964-416b-936c-32b2ccc14aac",
+           :block/properties nil,
+           :block/format :markdown,
+           :block/children [],
+           :block/content "statische Variablen"}
+          {:block/id #uuid "655b7908-5d7f-4d34-91ad-5ce0bdabe5c2",
+           :block/properties nil,
+           :block/format :markdown,
+           :block/children [],
+           :block/content "Stack wächst, bzw. schrumpf"}
+          {:block/id #uuid "655b7927-c60d-410e-90e1-c05cd6beda98",
+           :block/properties nil,
+           :block/format :markdown,
+           :block/children [],
+           :block/content
+           "Bsp. Erstellung von Variable in Funktionsblock, Löschung der Variable bei verlassen des Blockes"}
+          {:block/id #uuid "655b794b-ed90-4bb6-9c46-9104c6ac1306",
+           :block/properties nil,
+           :block/format :markdown,
+           :block/children
+           [{:block/id #uuid "655b7970-8115-458e-a1e8-f05722e835ca",
+             :block/properties nil,
+             :block/format :markdown,
+             :block/children [],
+             :block/content
+             "Problem: Stack kann in Datensegment hineinlaufen, was das Programm zerstört"}],
+           :block/content "Läuft Richtung Datensegment"}
+          {:block/id #uuid "655b7992-20e0-4dfe-9673-03a111bb0651",
+           :block/properties nil,
+           :block/format :markdown,
+           :block/children [],
+           :block/content
+           "Rekursive Funktionen haben hohen Stack verbrauch"}
+          {:block/id #uuid "655b7a69-25d2-4055-9b1f-9ae8d20824f4",
+           :block/properties nil,
+           :block/format :markdown,
+           :block/children [],
+           :block/content
+           "const Variablen liegen im Stack, wenn lokal definiert"}
+          {:block/id #uuid "655b7a84-33d2-4dd4-8408-5f754decad94",
+           :block/properties nil,
+           :block/format :markdown,
+           :block/children [],
+           :block/content
+           "Rücksprungadresse und Parameter einer Funktion liegen ebenfalls im Stack"}],
+         :block/content "Stack"}
+        {:block/id #uuid "655b79a8-ba76-4106-92bb-423382af6166",
+         :block/properties nil,
+         :block/format :markdown,
+         :block/children
+         [{:block/id #uuid "655b79d1-2d04-45b3-a98b-2e9ea6aea7d5",
+           :block/properties nil,
+           :block/format :markdown,
+           :block/children [],
+           :block/content "Dynamische Variablen"}],
+         :block/content "Heap"}],
+       :block/content "Aufgeteilt in 4 Segmente (Bereiche)"}],
+     :block/content "Programmaufbau"}
+    {:block/id #uuid "655b7a79-f605-48a2-a2bd-28fee430e3bc",
+     :block/properties nil,
+     :block/format :markdown,
+     :block/children [],
+     :block/content ""}
+    {:block/id #uuid "655b7abd-2f77-410f-8d9d-dcd144be5582",
+     :block/properties nil,
+     :block/format :markdown,
+     :block/children
+     [{:block/id #uuid "655b7ac0-4a57-4247-9d11-6954710a5209",
+       :block/properties nil,
+       :block/format :markdown,
+       :block/children
+       [{:block/id #uuid "655b7ad7-893b-4259-816a-ab19ee2915a1",
+         :block/properties nil,
+         :block/format :markdown,
+         :block/children [],
+         :block/content
+         "```c\n#include <stdlib.h>\nvoid * malloc (size_t size)\n```"}
+        {:block/id #uuid "655b7b02-eb99-4a1c-9faa-f5728676ddbe",
+         :block/properties nil,
+         :block/format :markdown,
+         :block/children [],
+         :block/content
+         "Gibt Speicheradresse zurück, wo freier Speicher gefunden wurde, der garantiert zusammenhängt"}
+        {:block/id #uuid "655b7b1d-51b5-4ab7-8c0d-1ba76eef8dfe",
+         :block/properties nil,
+         :block/format :markdown,
+         :block/children [],
+         :block/content "\"New\" Operator in Java oder C++"}
+        {:block/id #uuid "655b7b3f-c9fa-4752-8ff3-18eef0729897",
+         :block/properties nil,
+         :block/format :markdown,
+         :block/children [],
+         :block/content
+         "kann Fehlschlagen, wenn kein Speicher im Heap verfügbar -> Rückgabe von NULL-Pointer -> Überprüfen ob Speicher gefunden wurde oder nicht"}
+        {:block/id #uuid "655b7b7c-af23-40a2-bc76-aff443ed7acb",
+         :block/properties nil,
+         :block/format :markdown,
+         :block/children [],
+         :block/content
+         "malloc, wird meist mit sizeof Funktion verwendet"}
+        {:block/id #uuid "655b8331-c185-4099-82a2-9a604052c5c1",
+         :block/properties nil,
+         :block/format :markdown,
+         :block/children [],
+         :block/content
+         "da ein Pointer of void zurückgegeben wird, typen wir den Pointer mit casten zu dem Datentypen z.B. (list*)"}],
+       :block/content "neue Funktion zur Speicherreservierung"}
+      {:block/id #uuid "655b7bd0-2b01-4c6e-a1e2-1ddde8729c6d",
+       :block/properties nil,
+       :block/format :markdown,
+       :block/children
+       [{:block/id #uuid "655b7c7e-1e6f-4807-8576-047ef2ac6a10",
+         :block/properties nil,
+         :block/format :markdown,
+         :block/children
+         [{:block/id #uuid "655b7c84-b08c-41a6-b50b-7d7665fcc6f2",
+           :block/properties nil,
+           :block/format :markdown,
+           :block/children [],
+           :block/content
+           "```c\nvoid * calloc (size_t num, size_t size)\n```"}
+          {:block/id #uuid "655b7ca6-f870-468d-bab6-71de2059c3a8",
+           :block/properties nil,
+           :block/format :markdown,
+           :block/children [],
+           :block/content
+           "erster Parameter gibt Anzahl der benögtigten Variablen erwartet"}
+          {:block/id #uuid "655b7cc2-575b-41fd-b461-b0238a064849",
+           :block/properties nil,
+           :block/format :markdown,
+           :block/children [],
+           :block/content
+           "zweiter Parameter welche Größe benötigt wird"}
+          {:block/id #uuid "655b7cd7-86d8-4751-b6aa-089e632c627d",
+           :block/properties nil,
+           :block/format :markdown,
+           :block/children [],
+           :block/content "selbe Funktion wie malloc"}],
+         :block/content "Calloc"}
+        {:block/id #uuid "655b7ce0-6dba-4297-806c-c91cfc3e4189",
+         :block/properties nil,
+         :block/format :markdown,
+         :block/children
+         [{:block/id #uuid "655b7ce6-c9c6-48c3-8a51-4907f4ca2b49",
+           :block/properties nil,
+           :block/format :markdown,
+           :block/children [],
+           :block/content
+           "```c\nvoid * realloc (void * memblock, size_t size)\n```"}
+          {:block/id #uuid "655b7d0c-d6b3-4f6a-9085-b49a703f7d89",
+           :block/properties nil,
+           :block/format :markdown,
+           :block/children [],
+           :block/content
+           "erster Parameter übergibt bereits angeforderten Speicher"}
+          {:block/id #uuid "655b7d25-b45d-42e7-81fc-b8c3c6935a75",
+           :block/properties nil,
+           :block/format :markdown,
+           :block/children [],
+           :block/content
+           "zweiter Parameter gibt an ob Speicher verkleinert oder vergrößert werden soll"}
+          {:block/id #uuid "655b7d38-b9d5-49ce-a4dd-3630bfce085f",
+           :block/properties nil,
+           :block/format :markdown,
+           :block/children
+           [{:block/id #uuid "655b7d42-21d5-4315-a3bc-909f5e7e65b7",
+             :block/properties nil,
+             :block/format :markdown,
+             :block/children [],
+             :block/content
+             "Wenn frei kein Problem, Speicher wird mit gleicher Adresse zurückgegeben"}
+            {:block/id #uuid "655b7d58-3a32-4982-af43-3dffa38b3fd7",
+             :block/properties nil,
+             :block/format :markdown,
+             :block/children [],
+             :block/content
+             "Wenn nicht frei, gewünschte Speichergröße wird im Heap gesucht und Daten werden umkopiert, es wird eine neue Speicheradresse zurückgegeben -> ABER: mögliche lange Laufzeit"}
+            {:block/id #uuid "655b7dd8-f73f-4943-a1c0-5402863028b7",
+             :block/properties nil,
+             :block/format :markdown,
+             :block/children [],
+             :block/content
+             "realloc laufzeit kann nicht abgeschätzt werden"}],
+           :block/content "Achtung bei Vergrößerung:"}],
+         :block/content "realloc"}],
+       :block/content "weitere Funktionen"}],
+     :block/content "Speicherreservierung im Heap"}
+    {:block/id #uuid "655b7de6-971e-410f-bc81-215dce256a45",
+     :block/properties nil,
+     :block/format :markdown,
+     :block/children
+     [{:block/id #uuid "655b7dee-cc63-4556-a202-7ea9186ff4aa",
+       :block/properties nil,
+       :block/format :markdown,
+       :block/children [],
+       :block/content "```c\nvoid free(void * pointer)\n```"}
+      {:block/id #uuid "655b7e0a-30c0-4a2d-939f-8aec131929a0",
+       :block/properties nil,
+       :block/format :markdown,
+       :block/children [],
+       :block/content "es können keine Fehler passieren"}
+      {:block/id #uuid "655b7e12-df9f-4a96-b814-9103230a7ea4",
+       :block/properties nil,
+       :block/format :markdown,
+       :block/children [],
+       :block/content
+       "tut erstmal nichts anderes, als der Speicherverwaltung mitzuteilen, dass Speicher neu vergeben werden darf"}],
+     :block/content "Freigeben von Speicher"}
+    {:block/id #uuid "655b7e3c-0dca-4811-b425-253271ef6d8f",
+     :block/properties nil,
+     :block/format :markdown,
+     :block/children
+     [{:block/id #uuid "655b7e6c-50c1-4542-ba49-a74dac374ca9",
+       :block/properties nil,
+       :block/format :markdown,
+       :block/children [],
+       :block/content "Vergessen Speicher wieder freizugeben"}
+      {:block/id #uuid "655b7e7a-2c61-45d9-b675-27dfd71c471b",
+       :block/properties nil,
+       :block/format :markdown,
+       :block/children [],
+       :block/content
+       "Wenn zu viel Speicher verbraucht wird, stürzt das Programm ab"}],
+     :block/content "Memory leak"}
+    {:block/id #uuid "655b7eac-b5f9-461c-b71e-e07996af7962",
+     :block/properties nil,
+     :block/format :markdown,
+     :block/children
+     [{:block/id #uuid "655b7eb3-c159-4152-b292-689eaed3216a",
+       :block/properties nil,
+       :block/format :markdown,
+       :block/children [],
+       :block/content
+       "Löschung des Speichers, bei welchen ein Pointer noch darauf zeigt"}
+      {:block/id #uuid "655b7efa-db01-4ea0-8f3c-e92c907b0a13",
+       :block/properties nil,
+       :block/format :markdown,
+       :block/children [],
+       :block/content
+       "geht gut bis Speicher wieder überschrieben wird, von anderen Programm"}
+      {:block/id #uuid "655b7f28-e543-4d00-af74-65aa9252bccc",
+       :block/properties nil,
+       :block/format :markdown,
+       :block/children [],
+       :block/content
+       "Fehler wird meist zeitlich viel später bemerkt -> schweres Debuggen"}
+      {:block/id #uuid "655b7f3e-dbe1-48bf-b973-0812c88f5e28",
+       :block/properties nil,
+       :block/format :markdown,
+       :block/children
+       [{:block/id #uuid "655b7f48-8510-452e-9219-44c76f030bf1",
+         :block/properties nil,
+         :block/format :markdown,
+         :block/children [],
+         :block/content "Pointer nach Löschung auf NULL setzen"}],
+       :block/content "Lösung"}],
+     :block/content "Dangling Pointer"}
+    {:block/id #uuid "655b7f65-654a-4ac1-bdeb-a32e36113445",
+     :block/properties nil,
+     :block/format :markdown,
+     :block/children [],
+     :block/content ""}
+    {:block/id #uuid "655b7f6a-11a9-4358-82c9-784e656b1b62",
+     :block/properties nil,
+     :block/format :markdown,
+     :block/children
+     [{:block/id #uuid "655b7f70-6b68-4bfb-ab79-11f1d86249c9",
+       :block/properties nil,
+       :block/format :markdown,
+       :block/children [],
+       :block/content "Liste wird dynamisch verlängert oder verkürzt"}
+      {:block/id #uuid "655b7fe0-c8ae-4cfd-91f0-abeb643adf10",
+       :block/properties nil,
+       :block/format :markdown,
+       :block/children [],
+       :block/content
+       "Jedes Listenelement hat einen Vorgänger und einen Nachfolger"}
+      {:block/id #uuid "655b800b-2d81-4429-9202-33c30fd01b07",
+       :block/properties nil,
+       :block/format :markdown,
+       :block/children [],
+       :block/content "Listenelemente haben denselben Typ"}
+      {:block/id #uuid "655b8017-3c34-435a-9a01-3eb6291b6459",
+       :block/properties nil,
+       :block/format :markdown,
+       :block/children
+       [{:block/id #uuid "655b8042-5d12-4c2d-88f8-d8f170a0c145",
+         :block/properties nil,
+         :block/format :markdown,
+         :block/children [],
+         :block/content
+         "```c\ntypedef struct list {\n  int x;\n  struct list * next;\n}list;\n```"}
+        {:block/id #uuid "655b807b-9914-4161-af74-129346ca8037",
+         :block/properties nil,
+         :block/format :markdown,
+         :block/children [],
+         :block/content
+         "Leere Liste wird durch NULL Zeiger repräsentiert"}
+        {:block/id #uuid "655b8097-4c6a-439e-98d5-a274a3c93c53",
+         :block/properties nil,
+         :block/format :markdown,
+         :block/children [],
+         :block/content
+         "immer zwei Elemente mit jeweils einem x und dem Pointer zum nächsten Listenelement"}
+        {:block/id #uuid "655b816a-8e43-4bea-9340-5b72dada2c9f",
+         :block/properties nil,
+         :block/format :markdown,
+         :block/children [],
+         :block/content
+         "nicht sofort erkennbar wo Liste anfängt, bzw endet"}
+        {:block/id #uuid "655b817d-f80e-40ba-b5b8-2cfc6fc29a97",
+         :block/properties nil,
+         :block/format :markdown,
+         :block/children
+         [{:block/id #uuid "655b81db-821c-49b5-8d38-3996c7545e19",
+           :block/properties nil,
+           :block/format :markdown,
+           :block/children [],
+           :block/content
+           "Fordert Speicher in der Größe von sizeof(list) an"}
+          {:block/id #uuid "655b8200-2852-4431-bd4e-d8e3893c75b6",
+           :block/properties nil,
+           :block/format :markdown,
+           :block/children [],
+           :block/content "legt Speicher und Variable x fest"}
+          {:block/id #uuid "655b82cf-13e5-4f91-b165-37b167c1e61c",
+           :block/properties nil,
+           :block/format :markdown,
+           :block/children [],
+           :block/content
+           "Funktion gibt den Pointer zum Anfang (Ende) der Liste zurück"}],
+         :block/content
+         "definieren einer append Funktion, die den Pointer zum Anfang (in der Informatik das Ende) der Liste bekommt und eine Varaible x (Siehe S. 225)"}],
+       :block/content "Definition des Datentypes"}],
+     :block/content "Dynamische Liste (Sequenz, lineare Liste)"}
+    {:block/id #uuid "655b8279-0bcf-4adc-b8a5-7041a8f82abe",
+     :block/properties nil,
+     :block/format :markdown,
+     :block/children [],
+     :block/content ""}
+    {:block/id #uuid "655b8377-2d74-4660-a04d-fffbe9213f67",
+     :block/properties nil,
+     :block/format :markdown,
+     :block/children
+     [{:block/id #uuid "655b7f1c-48f1-48b1-99f0-ccf9dbaffbc4",
+       :block/properties nil,
+       :block/format :markdown,
+       :block/children [],
+       :block/content
+       "Listenfunktionen haben hohe Wahrscheinlichkeit dranzukommen"}],
+     :block/content
+     "Prüfungsfragen S. 226, Funktionen selber definieren"}
+    {:block/id #uuid "655b8784-8197-4ba9-862d-2076dccea820",
+     :block/properties nil,
+     :block/format :markdown,
+     :block/children [],
+     :block/content ""}
+    {:block/id #uuid "655b7e5e-95cd-4cf1-978b-37841b1761bc",
+     :block/properties nil,
+     :block/format :markdown,
+     :block/children [],
+     :block/content ""}
+    {:block/id #uuid "655b77b8-e827-49e0-834a-61fda0f61830",
+     :block/properties nil,
+     :block/format :markdown,
+     :block/children [],
+     :block/content ""})}
+  {:block/id #uuid "655b8796-6629-4171-ab92-fd369e5c6b49",
+   :block/page-name "Modulares Programmieren",
+   :block/properties nil,
+   :block/format :markdown,
+   :block/children
+   ({:block/id #uuid "655b8796-ba3f-4600-99a9-66e0dcf62421",
+     :block/properties nil,
+     :block/format :markdown,
+     :block/children
+     [{:block/id #uuid "655b87b7-92b8-4a51-bd4b-e06af2ca8382",
+       :block/properties nil,
+       :block/format :markdown,
+       :block/children [],
+       :block/content "Sehr unübersichtlich, wenn nur in einer Datei"}
+      {:block/id #uuid "655b87eb-7650-4048-94a6-a61ff5131cdd",
+       :block/properties nil,
+       :block/format :markdown,
+       :block/children [],
+       :block/content
+       "Wenn in einer Datei, extreme Rekompelierungszeiten"}
+      {:block/id #uuid "655b8802-be28-4405-af3d-6b7cc9a98479",
+       :block/properties nil,
+       :block/format :markdown,
+       :block/children
+       [{:block/id #uuid "655b887b-4d65-4e3a-ac82-af42c58c5b2c",
+         :block/properties nil,
+         :block/format :markdown,
+         :block/children
+         [{:block/id #uuid "655b8885-c019-4f44-808c-fb1be1a2a5d6",
+           :block/properties nil,
+           :block/format :markdown,
+           :block/children [],
+           :block/content ".h Datein (Header)"}
+          {:block/id #uuid "655b88a9-35e0-4b48-a5e7-29b82d384b6e",
+           :block/properties nil,
+           :block/format :markdown,
+           :block/children [],
+           :block/content ".c Datei (C code)"}],
+         :block/content "Aufteilen der Datei in kleinere Dateien"}],
+       :block/content "Lösung"}],
+     :block/content
+     "In Praxis sind Programme mehrere 1000 oder sogar Millionen Programmzeilen groß"}
+    {:block/id #uuid "6564b4c3-ff1b-41cd-a82d-35e329e587db",
+     :block/properties nil,
+     :block/format :markdown,
+     :block/children
+     [{:block/id #uuid "6564b4c9-056a-4f40-add0-e5af22901b75",
+       :block/properties nil,
+       :block/format :markdown,
+       :block/children [],
+       :block/content
+       "Fehler wenn mehrfachinkludierung bei header Datein"}
+      {:block/id #uuid "6564b4e7-b001-4ae1-990e-9019da9557fa",
+       :block/properties nil,
+       :block/format :markdown,
+       :block/children [],
+       :block/content
+       "Compilererror, da mehrfach selbe Funktion defeniert"}
+      {:block/id #uuid "6564b4fc-4be8-4e42-93f7-0f4064847c4e",
+       :block/properties nil,
+       :block/format :markdown,
+       :block/children
+       [{:block/id #uuid "6564b52e-9d68-46bc-a531-d7e4eb9ac37f",
+         :block/properties nil,
+         :block/format :markdown,
+         :block/children [],
+         :block/content
+         "```c\n# ifndef _NAME_H_\n# define _NAME_H_\n...\n# endif \n```"}
+        {:block/id #uuid "6564b528-2da0-42d8-b214-a23071e0ace8",
+         :block/properties nil,
+         :block/format :markdown,
+         :block/children [],
+         :block/content ""}],
+       :block/content "Lösung"}],
+     :block/content "Problem"}
+    {:block/id #uuid "655b88b1-6f4d-4941-af8a-a4e0c7ad1a23",
+     :block/properties nil,
+     :block/format :markdown,
+     :block/children
+     [{:block/id #uuid "6564bce5-854b-4f3a-b397-b07b1ffc6baa",
+       :block/properties nil,
+       :block/format :markdown,
+       :block/children
+       [{:block/id #uuid "6564bceb-2674-478e-be78-a2626b419d8c",
+         :block/properties nil,
+         :block/format :markdown,
+         :block/children [],
+         :block/content
+         "Variable kann extern Deklariert werden (z.B. von zweiter Datei)"}
+        {:block/id #uuid "6564bd0b-8d1c-4b93-a740-2f24d2fe9461",
+         :block/properties nil,
+         :block/format :markdown,
+         :block/children [],
+         :block/content "Ablage im Datensegment"}],
+       :block/content "Keyword extern"}
+      {:block/id #uuid "6564b72d-bab4-4fd5-8d86-a2fc8da6e47e",
+       :block/properties nil,
+       :block/format :markdown,
+       :block/children
+       [{:block/id #uuid "6564b734-4869-4d7f-b842-1115711fe56a",
+         :block/properties nil,
+         :block/format :markdown,
+         :block/children [],
+         :block/content "Variable wird fest an C Datei gebunden"}
+        {:block/id #uuid "6564b7b5-c0b3-44e4-80c9-dd54191cbf69",
+         :block/properties nil,
+         :block/format :markdown,
+         :block/children [],
+         :block/content
+         "Realisierung des Prinzips \"Inforamation Hiding\""}
+        {:block/id #uuid "6564bd29-1e35-4f7d-9734-6e210708852b",
+         :block/properties nil,
+         :block/format :markdown,
+         :block/children [],
+         :block/content "Ablage im Datensegment"}],
+       :block/content "Keyword static"}],
+     :block/content "Globale Variablen / Funktionen"}
+    {:block/id #uuid "6564b7c6-055f-4174-b1d0-366e2caabaae",
+     :block/properties nil,
+     :block/format :markdown,
+     :block/children
+     [{:block/id #uuid "6564b83a-587b-4c89-b169-ed472688589c",
+       :block/properties nil,
+       :block/format :markdown,
+       :block/children
+       [{:block/id #uuid "6564b84d-4431-4c0b-b66e-32279df7fb03",
+         :block/properties nil,
+         :block/format :markdown,
+         :block/children [],
+         :block/content
+         "automatische Ablage / Entfernung der Variablen auf den stack"}
+        {:block/id #uuid "6564b860-a559-4213-8a97-6c5a1ba26275",
+         :block/properties nil,
+         :block/format :markdown,
+         :block/children [],
+         :block/content "nicht wirklich benötigt, da Standartwert"}],
+       :block/content "Keyword auto"}
+      {:block/id #uuid "6564b86d-9c39-4c05-9354-f4c506fab5be",
+       :block/properties nil,
+       :block/format :markdown,
+       :block/children
+       [{:block/id #uuid "6564b882-fe17-4aeb-9e22-a033f789ed98",
+         :block/properties nil,
+         :block/format :markdown,
+         :block/children [],
+         :block/content "Ablage der Variable in CPU Register"}
+        {:block/id #uuid "6564b8e4-1e77-40de-8124-aa50e070074e",
+         :block/properties nil,
+         :block/format :markdown,
+         :block/children [],
+         :block/content
+         "Dadurch spart man sich den Zugriff auf den RAM"}
+        {:block/id #uuid "6564b8ff-c88e-48e7-8d80-c6527f9d8b3e",
+         :block/properties nil,
+         :block/format :markdown,
+         :block/children [],
+         :block/content "Bietet sich für z.B. Laufvariablen an"}
+        {:block/id #uuid "6564b923-cf2a-48a7-babe-417983f0c8cc",
+         :block/properties nil,
+         :block/format :markdown,
+         :block/children [],
+         :block/content
+         "Gute Compiler machen dies normalerweise selbst"}],
+       :block/content "Keyword register"}
+      {:block/id #uuid "6564b931-d7a2-4587-b4c6-7075e0338074",
+       :block/properties nil,
+       :block/format :markdown,
+       :block/children
+       [{:block/id #uuid "6564b95b-c0ce-4ade-97ca-838f53071fa3",
+         :block/properties nil,
+         :block/format :markdown,
+         :block/children [],
+         :block/content "Variable lebt über Blockgrenze hinaus"}
+        {:block/id #uuid "6564ba90-e7ff-4d3f-bcba-1d34d1ad06e7",
+         :block/properties nil,
+         :block/format :markdown,
+         :block/children [],
+         :block/content "Sichtbarkeit nur innerhalb der Funktion"}
+        {:block/id #uuid "6564bab8-632c-48fd-8be8-6d51d06543ac",
+         :block/properties nil,
+         :block/format :markdown,
+         :block/children [],
+         :block/content
+         "Im Hintergrund wird global abgelegt, nur mit Zugriffsschutz"}
+        {:block/id #uuid "6564bacd-d1ac-40da-8fd5-f2870cc2466c",
+         :block/properties nil,
+         :block/format :markdown,
+         :block/children [],
+         :block/content "Ablage im Datenbereich"}],
+       :block/content "Keyword static"}
+      {:block/id #uuid "6564bdc2-b4ae-4ca7-a057-57604ad3f95e",
+       :block/properties nil,
+       :block/format :markdown,
+       :block/children [],
+       :block/content ""}
+      {:block/id #uuid "6564bdc3-e6f6-4fb9-ae49-d4ac63cc356e",
+       :block/properties nil,
+       :block/format :markdown,
+       :block/children [],
+       :block/content ""}
+      {:block/id #uuid "6564bad5-4e33-44ec-843e-8f14ff443fca",
+       :block/properties nil,
+       :block/format :markdown,
+       :block/children [],
+       :block/content ""}],
+     :block/content "Speicherklassen lokale Variablen"})}
+  {:block/id #uuid "6544cb86-abd3-419e-8c56-79f2f7abd4ca",
+   :block/page-name "Funktionen zum Bearbeiten von Strings",
+   :block/properties nil,
+   :block/format :markdown,
+   :block/children
+   ({:block/id #uuid "6544cb86-4b60-4934-913c-2d4556f7319b",
+     :block/properties nil,
+     :block/format :markdown,
+     :block/children
+     [{:block/id #uuid "654d24b8-e8b3-4b8a-bd84-80c4361a6bd0",
+       :block/properties nil,
+       :block/format :markdown,
+       :block/children [],
+       :block/content
+       "```c\n//Syntax\nsize_t strlen (const char * s);\n\n//Bsp:\nchar string [100] = \"So lang ist dieser String:\";\nprintf (\"%s %d\\n\", string, strlen (string))\n```"}
+      {:block/id #uuid "6544cb9d-b8d4-4c7e-aa24-240cc1a0de60",
+       :block/properties nil,
+       :block/format :markdown,
+       :block/children [],
+       :block/content
+       "liefert als Rückgabe die Anzahl der Zeichen, das Zeichen '\\0' wird nicht mitgezählt"}],
+     :block/content "Funktion strlen()"}
+    {:block/id #uuid "6544cbcf-7233-4876-a8d5-9beb2dc8d0d2",
+     :block/properties nil,
+     :block/format :markdown,
+     :block/children
+     [{:block/id #uuid "65467381-3852-4ade-b2a7-0e3ca05a5522",
+       :block/properties nil,
+       :block/format :markdown,
+       :block/children [],
+       :block/content
+       "```c \n//Syntax\nchar * strcpy (char * dest, const char * src);\n```"}
+      {:block/id #uuid "6544cbfb-a085-4c3f-b8e5-e0e2d9f223ed",
+       :block/properties nil,
+       :block/format :markdown,
+       :block/children [],
+       :block/content
+       "kopiert Inhalt des Strings src einschließlich '\\0'"}],
+     :block/content "Funktion strcpy()"}
+    {:block/id #uuid "6544cd3d-ab30-45a6-bfa4-8148d265891f",
+     :block/properties nil,
+     :block/format :markdown,
+     :block/children
+     [{:block/id #uuid "6544cd45-9b83-4179-bd04-34c8d65907e2",
+       :block/properties nil,
+       :block/format :markdown,
+       :block/children [],
+       :block/content
+       "```c \n// Syntax\nchar * strcat (char * dest, const char * src);\n```"}
+      {:block/id #uuid "6544cd56-7eda-467c-8e16-5f1412c2a3e6",
+       :block/properties nil,
+       :block/format :markdown,
+       :block/children [],
+       :block/content "hängt einen String an einen anderen an"}
+      {:block/id #uuid "6544cd73-45d4-4853-ab2c-21fd9a358cec",
+       :block/properties nil,
+       :block/format :markdown,
+       :block/children [],
+       :block/content "prüft nicht ob array größe ausreicht"}],
+     :block/content "Funktion strcat()"}
+    {:block/id #uuid "6544ce8c-b5af-4934-897b-3627e1ec857b",
+     :block/properties nil,
+     :block/format :markdown,
+     :block/children
+     [{:block/id #uuid "654673ce-e694-48c7-9db5-d952bf504189",
+       :block/properties nil,
+       :block/format :markdown,
+       :block/children [],
+       :block/content
+       "```c\nSyntax\nint strcmp (const char * s1, const char * s2);\n```"}
+      {:block/id #uuid "6544cea7-5562-467e-bb5f-58ea75ac6db6",
+       :block/properties nil,
+       :block/format :markdown,
+       :block/children [],
+       :block/content "vergleicht den Inhalt"}
+      {:block/id #uuid "654d2544-d8b3-4e37-a2de-79f8fda51004",
+       :block/properties nil,
+       :block/format :markdown,
+       :block/children
+       [{:block/id #uuid "654d254a-5628-410f-a36a-f6fa8d977b78",
+         :block/properties nil,
+         :block/format :markdown,
+         :block/children [],
+         :block/content "\"< 0\": String s1 kleiner als s2"}
+        {:block/id #uuid "654d256f-90c5-450b-9492-6d1a63b19be0",
+         :block/properties nil,
+         :block/format :markdown,
+         :block/children [],
+         :block/content "\"== 0\": String ist gleich"}
+        {:block/id #uuid "654d257d-7255-421a-a7aa-cd675046e03f",
+         :block/properties nil,
+         :block/format :markdown,
+         :block/children [],
+         :block/content
+         "\"> 0\": String s1 ist lexikografisch größer als s2"}],
+       :block/content "Mögliche Rückgabewerte"}
+      {:block/id #uuid "654d25e8-7e3f-4582-b3fa-28edc2fa3278",
+       :block/properties nil,
+       :block/format :markdown,
+       :block/children [],
+       :block/content ""}],
+     :block/content "Funktion strcmp()"}
+    {:block/id #uuid "6544cb88-5bda-4ecc-b0fe-b957e1ff3a2a",
+     :block/properties nil,
+     :block/format :markdown,
+     :block/children [],
+     :block/content ""}
+    {:block/id #uuid "6544cb88-d078-429a-adc3-f433af73c64e",
+     :block/properties nil,
+     :block/format :markdown,
+     :block/children [],
+     :block/content
+     "#[[Arrays in C]] #[[Äquvialenz von Array- und Pointer-Notation]]"})}
+  {:block/id #uuid "6543fa39-c6ce-4b23-ac21-206b4bf77b83",
+   :block/page-name "Parameterübergabe",
+   :block/properties nil,
+   :block/format :markdown,
+   :block/children
+   ({:block/id #uuid "6543fa39-8c05-4daa-923a-af8a0eca3a53",
+     :block/properties nil,
+     :block/format :markdown,
+     :block/children
+     [{:block/id #uuid "6543fa4a-97a2-4128-b041-965fa0db93c2",
+       :block/properties nil,
+       :block/format :markdown,
+       :block/children [],
+       :block/content
+       "Werteparameter = Übergabe des Wertes vom Ausdruck an die Funktion (call by value)"}
+      {:block/id #uuid "6543fa79-12be-4afe-b0ad-c871b6119031",
+       :block/properties nil,
+       :block/format :markdown,
+       :block/children [],
+       :block/content
+       "Referenzparameter = Übergabe der Variable an die Funktion selbst (call by reference)"}],
+     :block/content "Arten von Parameter:"}
+    {:block/id #uuid "6543fac5-18ac-4d30-87bd-4bde07cfcdb6",
+     :block/properties nil,
+     :block/format :markdown,
+     :block/children [],
+     :block/content ""}
+    {:block/id #uuid "6543fac8-de60-469a-89a1-210b58954098",
+     :block/properties nil,
+     :block/format :markdown,
+     :block/children
+     [{:block/id #uuid "6543faeb-ba1c-4c51-a6ee-fbc1f9478965",
+       :block/properties nil,
+       :block/format :markdown,
+       :block/children [],
+       :block/content
+       "Ermöglichen neben Rückgabe des Funktionsergebnisses auch noch die Rückgabe von weiteren Berechnungsergebnisen"}
+      {:block/id #uuid "6543fb13-acac-43fb-a207-fed5dfa4eda6",
+       :block/properties nil,
+       :block/format :markdown,
+       :block/children [],
+       :block/content
+       "Beschleunigen die Übergabe von Parameter (z.B. von großen Datentypen)"}
+      {:block/id #uuid "6543fb2e-57f3-4e66-8da8-f9d9cf87261f",
+       :block/properties nil,
+       :block/format :markdown,
+       :block/children
+       [{:block/id #uuid "6543fb68-7e6d-4d51-9bbc-9c5f15c54a1a",
+         :block/properties nil,
+         :block/format :markdown,
+         :block/children [],
+         :block/content
+         "Es ist möglich das Schlüsselwort \"const\" zu verwenden um zu verhindern, dass der Wert im Speicher, auf welchen der pointer zeigt verändert wird. Achtung pointer an sich kann immer noch geändert werden. (Siehe Seite 128 für Beispiel)"}
+        {:block/id #uuid "6544c3c4-c9a1-4dfe-b7c2-c12c195fc97e",
+         :block/properties nil,
+         :block/format :markdown,
+         :block/children [],
+         :block/content
+         "Deswegen muss bei Übergabe von Arrays nicht extra die Größe bzw. extra \"*\" geschrieben werden"}
+        {:block/id #uuid "6543fa3b-44bf-40f0-9d11-945fb900556d",
+         :block/properties nil,
+         :block/format :markdown,
+         :block/children
+         [{:block/id #uuid "6544c932-7b8a-4810-8417-e749a27eb5f4",
+           :block/properties nil,
+           :block/format :markdown,
+           :block/children [],
+           :block/content
+           "int printf (const char * formatstring, ...);"}
+          {:block/id #uuid "6544c940-6ed1-4bca-8a56-6c52338197d0",
+           :block/properties nil,
+           :block/format :markdown,
+           :block/children [],
+           :block/content
+           "const, als Garantie, dass der char Array nicht kaputt geht, bei Übergabe"}],
+         :block/content "Funktionsprototyp vom printf():"}],
+       :block/content
+       "Referenzparamenter sind pflicht bei Übergabe von Feldern und Strings"}
+      {:block/id #uuid "6544c977-d091-4d4e-87d0-1bf8237706ff",
+       :block/properties nil,
+       :block/format :markdown,
+       :block/children [],
+       :block/content ""}],
+     :block/content "Referenzparameter"}
+    {:block/id #uuid "6543fa3b-e26b-46fd-97f5-b72987442218",
+     :block/properties nil,
+     :block/format :markdown,
+     :block/children [],
+     :block/content "#[[Pointer in C]] #[[Arrays in C]]"})}
+  {:block/id #uuid "6543ceb0-c16c-44ed-820a-f9f5c8634441",
+   :block/page-name "Nov 2nd, 2023",
+   :block/properties nil,
+   :block/format :markdown,
+   :block/children
+   ({:block/id #uuid "6543ceb0-2c4d-494c-b2f1-dbb72024ad22",
+     :block/properties nil,
+     :block/format :markdown,
+     :block/children
+     [{:block/id #uuid "6543ced4-9014-4780-b04d-091640bed1d8",
+       :block/properties nil,
+       :block/format :markdown,
+       :block/children
+       [{:block/id #uuid "6543cf22-e2d2-4c2c-b776-943d040ae14f",
+         :block/properties nil,
+         :block/format :markdown,
+         :block/children [],
+         :block/content "Symbol Pointer: *"}
+        {:block/id #uuid "6543cf2f-ba82-4ec7-8137-12e88937cc07",
+         :block/properties nil,
+         :block/format :markdown,
+         :block/children [],
+         :block/content "Symbol für Ermittlung der Speicheradresse: &"}
+        {:block/id #uuid "6543cfd5-9b19-4198-b379-7a7ae545549d",
+         :block/properties nil,
+         :block/format :markdown,
+         :block/children [],
+         :block/content "Anwendung: int *x = &example"}],
+       :block/content
+       "Pointer beinhalten Speicheraddressen, deswegen muss ihnen beim initialisieren auch eine übergeben werden"}
+      {:block/id #uuid "6543cffa-a4cd-4467-af61-8db52c4f9b00",
+       :block/properties nil,
+       :block/format :markdown,
+       :block/children [],
+       :block/content
+       "Um den Wert und nicht die Speicheradresse zu verändern muss man den Wert \"dereferenziert\" werde. Dafür wird ebenfalls das \"*\" Symbol verwendet."}],
+     :block/content "Pointer in C"}
+    {:block/id #uuid "6543cf55-a574-4fcf-8b90-22870a947be8",
+     :block/properties nil,
+     :block/format :markdown,
+     :block/children
+     [{:block/id #uuid "6543cf61-80af-4a51-9542-e29a4743775d",
+       :block/properties nil,
+       :block/format :markdown,
+       :block/children
+       [{:block/id #uuid "6543cfc3-103c-45d9-8ef5-1b081fee7592",
+         :block/properties nil,
+         :block/format :markdown,
+         :block/children [],
+         :block/content
+         "Anwendung Array: int arry[5] = {1, 2, 3, 4, 5} oder char buffer[] = \"Hello World\" (letzteres nicht Empfohlen, da größe des Arrays nicht bekannt für weiteren Programmablauf)"}],
+       :block/content
+       "Arrays (Vektoren) können Werte desselben typs halten. Sie benötigen eine festegröße beim initialiseren, allerdings können diese auch selbst vom compiler festgelegt werden."}
+      {:block/id #uuid "6543d0a9-9cca-4d7c-b386-2b159c91da06",
+       :block/properties nil,
+       :block/format :markdown,
+       :block/children
+       [{:block/id #uuid "6543d0c2-be1d-41f3-bfb5-efb77536420b",
+         :block/properties nil,
+         :block/format :markdown,
+         :block/children [],
+         :block/content
+         "Der Grund dafür ist das Nullzeichen: '\\0', welches anzeigt wann ein char Array zuende ist"}],
+       :block/content
+       "Wichtig ist das ein Array bei 0 anfängt zu zählen und bei n-1 endet"}
+      {:block/id #uuid "6543d16c-e13d-4540-ac57-37bbf16d949c",
+       :block/properties nil,
+       :block/format :markdown,
+       :block/children
+       [{:block/id #uuid "6543d1c9-2180-4f25-b24d-2e5e946ca81a",
+         :block/properties nil,
+         :block/format :markdown,
+         :block/children [],
+         :block/content
+         "Grund dafür ist, dass man wegen einer Änderung sehr viele Arrays bzw. Überprüfungen anpassen müsste, was leicht zu Fehlern führen kann."}],
+       :block/content
+       "Zudem sollte mit symbolischen Konstanten und nicht mit literalen Konstanten (z.B. nicht Zahl 5) gearbeitet werden."}],
+     :block/content "Arrays in C (Einseitige Felder)"})}
+  {:block/id #uuid "65524bce-8e01-4cf8-822d-85bd0cd4eaba",
+   :block/page-name "Symbolische Konstanten und Makros mit Parameter",
+   :block/properties nil,
+   :block/format :markdown,
+   :block/children
+   ({:block/id #uuid "6557357b-1d67-4734-8461-d3297685caa5",
+     :block/properties nil,
+     :block/format :markdown,
+     :block/children [],
+     :block/content "immer mit vorangestellten \"#\""}
+    {:block/id #uuid "65524c07-562b-40f0-928c-6dc29f5421bc",
+     :block/properties nil,
+     :block/format :markdown,
+     :block/children
+     [{:block/id #uuid "65524c12-95ff-485f-95b8-c4a75db1daf3",
+       :block/properties nil,
+       :block/format :markdown,
+       :block/children [],
+       :block/content "ersetzen von beliebige Folge von Zeichen"}
+      {:block/id #uuid "65524c21-1cec-44b8-9963-cf21d886d1b7",
+       :block/properties nil,
+       :block/format :markdown,
+       :block/children
+       [{:block/id #uuid "65524c26-e941-4858-9307-e63072f2b184",
+         :block/properties nil,
+         :block/format :markdown,
+         :block/children [],
+         :block/content
+         "Text, der als substring in einem Namen enthalten ist"}
+        {:block/id #uuid "65524c30-b7e1-493c-bb74-eac0afa33c87",
+         :block/properties nil,
+         :block/format :markdown,
+         :block/children [],
+         :block/content "Text innerhalb von Zeichenketten"}
+        {:block/id #uuid "65524c36-4a22-4ad5-8240-fc523100d1d6",
+         :block/properties nil,
+         :block/format :markdown,
+         :block/children [],
+         :block/content
+         "Text innerhalb von anderen Präprozesssor-Anweisungen"}],
+       :block/content "Nicht ersetzt wird"}
+      {:block/id #uuid "65524c43-fc3d-4e92-a05b-bf05259284f1",
+       :block/properties nil,
+       :block/format :markdown,
+       :block/children [],
+       :block/content
+       "define wird als Makro bezeichnet und diesem kann wie einer Funktion parameter übergeben werden"}
+      {:block/id #uuid "65524c66-edb7-4dda-9677-e5886285104e",
+       :block/properties nil,
+       :block/format :markdown,
+       :block/children [],
+       :block/content
+       "Makro ohne Parameter wird als symbolische Konstante bezeichnet"}
+      {:block/id #uuid "65524c7c-41cc-4688-8390-c86552ee8ef6",
+       :block/properties nil,
+       :block/format :markdown,
+       :block/children [],
+       :block/content "Nützlich, um globale Änderungen zu ermöglichen"}
+      {:block/id #uuid "65524c8d-507a-4927-83ee-7aff51e74634",
+       :block/properties nil,
+       :block/format :markdown,
+       :block/children [],
+       :block/content
+       "kann mit \"undef Bezeichner\" wieder aufgelöst werden"}
+      {:block/id #uuid "65524ccc-221f-48f9-b7ff-cd6a89747a67",
+       :block/properties nil,
+       :block/format :markdown,
+       :block/children [],
+       :block/content
+       "define kann auch in funktion stehen, da der Präporzessor diese nicht kennt und dem Präprozessor ist es egal wann und ob die Funktion aufgerufen wird"}
+      {:block/id #uuid "65524d0b-3723-495f-9fc1-42c9bb987755",
+       :block/properties nil,
+       :block/format :markdown,
+       :block/children
+       [{:block/id #uuid "65524d3b-2b41-4927-a722-b903df11eee5",
+         :block/properties nil,
+         :block/format :markdown,
+         :block/children [],
+         :block/content
+         "```c\n// Syntax\n#define Bezeichner (Param1, ..., ParamN) Erstatztext\n\n//Anwendung\n#define square(x) x*x\n```"}
+        {:block/id #uuid "65524d80-e195-45e4-89f5-92c06f0ae6b4",
+         :block/properties nil,
+         :block/format :markdown,
+         :block/children [],
+         :block/content
+         "square ist so banal, dass es schneller ist den Text, den die Funktion bildet, einzusetzen als Referenzparameter"}
+        {:block/id #uuid "65524de0-135e-4abf-8258-56ec34158a87",
+         :block/properties nil,
+         :block/format :markdown,
+         :block/children
+         [{:block/id #uuid "65524e06-fe18-428a-9b2e-510b5ae333f6",
+           :block/properties nil,
+           :block/format :markdown,
+           :block/children [],
+           :block/content "```c\ny = square(x);\n```"}
+          {:block/id #uuid "65524e35-09be-4130-b546-b1df7e9ef31e",
+           :block/properties nil,
+           :block/format :markdown,
+           :block/children [],
+           :block/content "zu"}
+          {:block/id #uuid "65524e1e-749d-4852-82a1-09bb02b0d286",
+           :block/properties nil,
+           :block/format :markdown,
+           :block/children [],
+           :block/content "```c\ny = x * x;\n```"}
+          {:block/id #uuid "65524e38-0a00-4e4f-852d-1cda9c83c109",
+           :block/properties nil,
+           :block/format :markdown,
+           :block/children
+           [{:block/id #uuid "65524e3d-4ac8-4a1d-9044-d0b812161fab",
+             :block/properties nil,
+             :block/format :markdown,
+             :block/children [],
+             :block/content
+             "Compiler gibt andere Fehlermeldung als es dasteht (vorallem Zeilen können anders sein)"}
+            {:block/id #uuid "65524e69-c617-43b0-a02c-52b420467259",
+             :block/properties nil,
+             :block/format :markdown,
+             :block/children [],
+             :block/content
+             "Je länger der Ersatztext, desto länger wird der Quelltext"}],
+           :block/content "Achtung"}],
+         :block/content "Präprozessor erkennt \"()\", sodass"}
+        {:block/id #uuid "65524eea-b209-4577-aae1-7a921fe276d2",
+         :block/properties nil,
+         :block/format :markdown,
+         :block/children [],
+         :block/content
+         "Es können ungewollte Bedingungen in einem Ausdruck oder ungewollte Blockstrukturen entstehen"}
+        {:block/id #uuid "65524f01-7040-4daa-b27e-1b7676536aa8",
+         :block/properties nil,
+         :block/format :markdown,
+         :block/children
+         [{:block/id #uuid "65524f18-044c-425d-ad08-f3475c74de43",
+           :block/properties nil,
+           :block/format :markdown,
+           :block/children [],
+           :block/content
+           "square(3 + x) wird ersetzt durch 3 + x * 3 + x -> Falsches Ergebnis durch * Operator"}],
+         :block/content "Bsp"}
+        {:block/id #uuid "65524f3e-63e0-4af4-9575-dcdf946a7b51",
+         :block/properties nil,
+         :block/format :markdown,
+         :block/children
+         [{:block/id #uuid "65524f42-402f-4d16-ba85-9b74a7f1a439",
+           :block/properties nil,
+           :block/format :markdown,
+           :block/children [],
+           :block/content "Vollständige Klammern angeben"}
+          {:block/id #uuid "65524f61-ddd9-4bdf-883e-f16d7a9446af",
+           :block/properties nil,
+           :block/format :markdown,
+           :block/children [],
+           :block/content "define square(x) ((x) * (x))"}],
+         :block/content "Lösung"}
+        {:block/id #uuid "65524f83-4fe7-4990-a727-db5d097a71f9",
+         :block/properties nil,
+         :block/format :markdown,
+         :block/children [],
+         :block/content
+         "ungew. Blockstrukturen können durch Ersetzung durch bei z.B. IF-Schleifen probleme bereiten"}],
+       :block/content "Makros mit Parameter"}],
+     :block/content "define"}
+    {:block/id #uuid "65573426-5f4f-4787-b727-2952357433b4",
+     :block/properties nil,
+     :block/format :markdown,
+     :block/children
+     [{:block/id #uuid "6557342c-ebc4-4197-a810-42461a51fddb",
+       :block/properties nil,
+       :block/format :markdown,
+       :block/children [],
+       :block/content
+       "bedingte Kompilierung ist das Festlegen von z.B. Variablen zu Kompilierzeit"}
+      {:block/id #uuid "6557346a-4422-4303-8ea3-d83b454f0670",
+       :block/properties nil,
+       :block/format :markdown,
+       :block/children
+       [{:block/id #uuid "655734d7-51d1-4168-ae02-0b76701219aa",
+         :block/properties nil,
+         :block/format :markdown,
+         :block/children [],
+         :block/content
+         "Ebenfalls testen der Bit-Archektiktur möglich. Siehe S. 197"}],
+       :block/content
+       "Ermöglicht das schreiben von 2 Programmversionen z.B. zum Testen und zum Ausliefern an den Kunden"}
+      {:block/id #uuid "655734bf-3409-48a8-b694-8d52a4f48280",
+       :block/properties nil,
+       :block/format :markdown,
+       :block/children [],
+       :block/content
+       "wird mit endif beendet, elif und else sind ebenfalls möglich"}
+      {:block/id #uuid "655734f5-9874-4fad-a348-71ab2650ca72",
+       :block/properties nil,
+       :block/format :markdown,
+       :block/children [],
+       :block/content
+       "Compiler sieht die ausgeschlossenen Blöcke nicht -> keine Aufblähung des Programmes"}
+      {:block/id #uuid "65573533-bd09-48f0-8b79-aa4f5379255b",
+       :block/properties nil,
+       :block/format :markdown,
+       :block/children [],
+       :block/content "Wert muss immer Konstant sein als Bedingung"}],
+     :block/content "ifdef"}
+    {:block/id #uuid "65573642-2d81-4b74-91ea-d5da11736db1",
+     :block/properties nil,
+     :block/format :markdown,
+     :block/children
+     [{:block/id #uuid "65573647-d14a-4b3d-8b54-69a2c246a077",
+       :block/properties nil,
+       :block/format :markdown,
+       :block/children
+       [{:block/id #uuid "65573652-92db-4236-8459-a4f4bcff6dfc",
+         :block/properties nil,
+         :block/format :markdown,
+         :block/children [],
+         :block/content "inkludieren offizieller Systembibilotheken"}
+        {:block/id #uuid "655736d9-1cc8-46ba-b578-1381aa939355",
+         :block/properties nil,
+         :block/format :markdown,
+         :block/children
+         [{:block/id #uuid "655736dc-5b8c-4b04-bbf7-034438e98db2",
+           :block/properties nil,
+           :block/format :markdown,
+           :block/children [],
+           :block/content "meist /usr/include"}],
+         :block/content "Linux stdio.h"}],
+       :block/content "<filename>"}
+      {:block/id #uuid "65573661-edea-4e1b-8aeb-d4eb10d78b08",
+       :block/properties nil,
+       :block/format :markdown,
+       :block/children
+       [{:block/id #uuid "65573667-10f1-407d-8c94-bffb4b5f60f6",
+         :block/properties nil,
+         :block/format :markdown,
+         :block/children [],
+         :block/content "inkludieren eigener Dateien"}
+        {:block/id #uuid "6557368e-516f-475f-a66d-285ee1bb4139",
+         :block/properties nil,
+         :block/format :markdown,
+         :block/children [],
+         :block/content
+         "sucht Datei an der Stelle wo der C code liegt"}
+        {:block/id #uuid "65573779-bf8d-4488-aa5f-e8e33780e311",
+         :block/properties nil,
+         :block/format :markdown,
+         :block/children [],
+         :block/content "in Pfad mit / eins hineingehen"}
+        {:block/id #uuid "65573782-5a50-4e25-84a6-7f2e39b07ea8",
+         :block/properties nil,
+         :block/format :markdown,
+         :block/children [],
+         :block/content "in Pfad mit .. eins zurückgehen"}],
+       :block/content "\"filename\""}
+      {:block/id #uuid "6557369c-4b8a-46bb-99d0-fa474082401f",
+       :block/properties nil,
+       :block/format :markdown,
+       :block/children [],
+       :block/content
+       "header und c Dateien sollten voneinander getrennt werden, für bessere Übersichtlichkeit"}
+      {:block/id #uuid "65573776-6404-49fd-a10e-df8c17fa032c",
+       :block/properties nil,
+       :block/format :markdown,
+       :block/children [],
+       :block/content
+       "Prinzipiell niemals C Datein inkludieren, da schlechter Style und unnötiger Kompelierungsaufwand"}
+      {:block/id #uuid "65573814-1fa7-4d7b-86dc-1bc0ea517c67",
+       :block/properties nil,
+       :block/format :markdown,
+       :block/children [],
+       :block/content ""}],
+     :block/content "include"}
+    {:block/id #uuid "65524c07-3465-46de-a207-4aaf3a9baf19",
+     :block/properties nil,
+     :block/format :markdown,
+     :block/children [],
+     :block/content ""}
+    {:block/id #uuid "65524bcf-210d-4ae9-9451-9ec2c02ae5c9",
+     :block/properties nil,
+     :block/format :markdown,
+     :block/children [],
+     :block/content "#Präporzessor"})}
+  {:block/id #uuid "6564c34a-9433-45a6-92bc-67476a9e63a7",
+   :block/page-name "Eingabe Ausgabe in C",
+   :block/properties nil,
+   :block/format :markdown,
+   :block/children
+   ({:block/id #uuid "6564c3dd-b0f6-4762-99c8-6eb1515869c2",
+     :block/properties nil,
+     :block/format :markdown,
+     :block/children
+     [{:block/id #uuid "6564c34a-eeb3-4488-a060-6ab4bc1cf572",
+       :block/properties nil,
+       :block/format :markdown,
+       :block/children
+       [{:block/id #uuid "6564c361-4160-49d2-bfb7-3a2052d74002",
+         :block/properties nil,
+         :block/format :markdown,
+         :block/children [],
+         :block/content
+         "(stdin, stdout, stderr (= Fehlermeldungen, oft in Lock datei geschrieben))"}],
+       :block/content "Standardeingabe bzw ausgabe"}
+      {:block/id #uuid "6564c371-8801-4711-b3dc-7c9a1f1f5caf",
+       :block/properties nil,
+       :block/format :markdown,
+       :block/children [],
+       :block/content "String Ein / Ausgabe"}
+      {:block/id #uuid "6564c37f-ee55-4aff-bd2b-a837e9878012",
+       :block/properties nil,
+       :block/format :markdown,
+       :block/children [],
+       :block/content "Datei (File) Ein- und Ausgabe"}],
+     :block/content "Aufteilung in drei Gruppen"}
+    {:block/id #uuid "6564c447-2118-41d6-8c32-6e60d591d8cb",
+     :block/properties nil,
+     :block/format :markdown,
+     :block/children [],
+     :block/content ""}
+    {:block/id #uuid "6564c449-7b04-4b43-9926-a3ea969e2019",
+     :block/properties nil,
+     :block/format :markdown,
+     :block/children
+     [{:block/id #uuid "6564c44b-e55f-4713-982b-fa8775fcb16f",
+       :block/properties nil,
+       :block/format :markdown,
+       :block/children [],
+       :block/content
+       "Ein und Ausgabefunktionen werden bereitgestellt und Funktionsdeklarationen in stdio.h"}],
+     :block/content "stdlib"}
+    {:block/id #uuid "6564c4c7-d223-4054-95e8-f256486635c0",
+     :block/properties nil,
+     :block/format :markdown,
+     :block/children [],
+     :block/content ""}
+    {:block/id #uuid "6564c46f-7480-45fe-b029-8634322fc602",
+     :block/properties nil,
+     :block/format :markdown,
+     :block/children
+     [{:block/id #uuid "6564c4c0-b2dc-44e0-8d89-d7748021127c",
+       :block/properties nil,
+       :block/format :markdown,
+       :block/children [],
+       :block/content "Stream ist eine unendliche Folge von Bytes"}
+      {:block/id #uuid "6564c586-497a-4668-953e-dd781774e1e6",
+       :block/properties nil,
+       :block/format :markdown,
+       :block/children [],
+       :block/content
+       "Streams werden automatisiert beim Ausführen eines C-Programmes gestartet und beendet"}],
+     :block/content "Ein und ausgabe in C ist Stream basiert"}
+    {:block/id #uuid "6564c501-62b1-48e7-90ed-e123c63139d3",
+     :block/properties nil,
+     :block/format :markdown,
+     :block/children [],
+     :block/content ""}
+    {:block/id #uuid "6564c536-0891-4353-8f12-643a819881aa",
+     :block/properties nil,
+     :block/format :markdown,
+     :block/children
+     [{:block/id #uuid "6564c538-e3e7-4e3b-8144-359df422c6b4",
+       :block/properties nil,
+       :block/format :markdown,
+       :block/children [],
+       :block/content
+       "Eingabestrom, verbunden üblicherweise mit Tastatur"}],
+     :block/content "stdin"}
+    {:block/id #uuid "6564c54f-de77-409a-b186-72b5bbcecf65",
+     :block/properties nil,
+     :block/format :markdown,
+     :block/children
+     [{:block/id #uuid "6564c552-6f18-4c4f-ab74-84303f9d42fb",
+       :block/properties nil,
+       :block/format :markdown,
+       :block/children [],
+       :block/content
+       "Ausgabestrom, üblicherweise mit dem Bildschirm (Terminal)"}],
+     :block/content "stout"}
+    {:block/id #uuid "6564c561-4251-458a-a0cd-b850e477964a",
+     :block/properties nil,
+     :block/format :markdown,
+     :block/children
+     [{:block/id #uuid "6564c565-65ba-4eac-95e0-fa3a789f0f02",
+       :block/properties nil,
+       :block/format :markdown,
+       :block/children [],
+       :block/content
+       "Ausgabestrom für Fehlermeldungen, üblicherweise mit Bildschirm (Terminal) verbunden"}],
+     :block/content "stderr"}
+    {:block/id #uuid "6564c57a-a67b-42b0-8a0f-705b3c3ae8cf",
+     :block/properties nil,
+     :block/format :markdown,
+     :block/children [],
+     :block/content ""}
+    {:block/id #uuid "6564c34c-eb17-4d48-ac0a-0d3d94adceaf",
+     :block/properties nil,
+     :block/format :markdown,
+     :block/children [],
+     :block/content ""}
+    {:block/id #uuid "6564c34c-fef2-4f4e-9727-5c94c0f5e83a",
+     :block/properties nil,
+     :block/format :markdown,
+     :block/children [],
+     :block/content "#Home"})}
+  {:block/id #uuid "6543d41d-773c-4bcd-ac3d-613013afd050",
+   :block/page-name "Pointer in C",
+   :block/properties nil,
+   :block/format :markdown,
+   :block/children
+   ({:block/id #uuid "6543d41d-d0ed-448c-9795-1e8b65d2e2d5",
+     :block/properties nil,
+     :block/format :markdown,
+     :block/children
+     [{:block/id #uuid "05db4906-74ea-4f9b-bfa0-8653df498c4f",
+       :block/properties nil,
+       :block/format :markdown,
+       :block/children
+       [{:block/id #uuid "822dfc5d-5f6e-4431-82dc-3e6cc42cfb5b",
+         :block/properties nil,
+         :block/format :markdown,
+         :block/children [],
+         :block/content "Symbol Pointer: *"}
+        {:block/id #uuid "0c3db94f-65b4-452c-a145-919fd80367e8",
+         :block/properties nil,
+         :block/format :markdown,
+         :block/children [],
+         :block/content "Symbol für Ermittlung der Speicheradresse: &"}
+        {:block/id #uuid "533fb015-1416-442c-8677-9bda206e8ab8",
+         :block/properties nil,
+         :block/format :markdown,
+         :block/children [],
+         :block/content "Anwendung: int *x = &example"}],
+       :block/content
+       "Pointer beinhalten Speicheraddressen, deswegen muss ihnen beim initialisieren auch eine übergeben werden"}
+      {:block/id #uuid "1ca5edd2-9677-470a-acc3-881c640b8d69",
+       :block/properties nil,
+       :block/format :markdown,
+       :block/children [],
+       :block/content
+       "Um den Wert und nicht die Speicheradresse zu verändern muss man den Wert \"dereferenziert\" werde. Dafür wird ebenfalls das \"*\" Symbol verwendet."}],
+     :block/content "Pointer in C"})}
+  {:block/id #uuid "6543d43b-1389-44c4-ab49-b15cdd81384e",
+   :block/page-name "Arrays in C",
+   :block/properties nil,
+   :block/format :markdown,
+   :block/children
+   ({:block/id #uuid "6543d43b-c121-4e76-bddc-6f9b119dadfc",
+     :block/properties nil,
+     :block/format :markdown,
+     :block/children
+     [{:block/id #uuid "46ff1a2c-bf06-401c-88c6-bc1e4b0a8ead",
+       :block/properties nil,
+       :block/format :markdown,
+       :block/children
+       [{:block/id #uuid "b01eb51f-9319-4d3d-b978-26df2e7a119a",
+         :block/properties nil,
+         :block/format :markdown,
+         :block/children [],
+         :block/content
+         "Anwendung Array: int arry[5] = {1, 2, 3, 4, 5} oder char buffer[] = \"Hello World\" (letzteres nicht Empfohlen, da größe des Arrays nicht bekannt für weiteren Programmablauf)"}],
+       :block/content
+       "Arrays (Vektoren) können Werte desselben typs halten. Sie benötigen eine festegröße beim initialiseren, allerdings können diese auch selbst vom compiler festgelegt werden."}
+      {:block/id #uuid "8f4dacc9-ddaf-4b08-8d26-dc24cf8cf6b7",
+       :block/properties nil,
+       :block/format :markdown,
+       :block/children
+       [{:block/id #uuid "14a9f99e-b3cc-4ca1-995c-d0313f8d5db3",
+         :block/properties nil,
+         :block/format :markdown,
+         :block/children [],
+         :block/content
+         "Der Grund dafür ist das Nullzeichen: '\\0', welches anzeigt wann ein char Array zuende ist"}],
+       :block/content
+       "Wichtig ist das ein Array bei 0 anfängt zu zählen und bei n-1 endet"}
+      {:block/id #uuid "21cca5dc-b0b2-4272-8c5c-60eb6478fb1a",
+       :block/properties nil,
+       :block/format :markdown,
+       :block/children
+       [{:block/id #uuid "57fd6ad9-4fa1-4de8-bd1a-d520d996f5ac",
+         :block/properties nil,
+         :block/format :markdown,
+         :block/children [],
+         :block/content
+         "Grund dafür ist, dass man wegen einer Änderung sehr viele Arrays bzw. Überprüfungen anpassen müsste, was leicht zu Fehlern führen kann."}],
+       :block/content
+       "Zudem sollte mit symbolischen Konstanten und nicht mit literalen Konstanten (z.B. nicht Zahl 5) gearbeitet werden."}],
+     :block/content "Arrays in C (Einseitige Felder)"}
+    {:block/id #uuid "6544be3c-b550-4a4d-aa63-d66c0ddb939e",
+     :block/properties nil,
+     :block/format :markdown,
+     :block/children [],
+     :block/content ""}
+    {:block/id #uuid "654df97e-6ef3-4a72-9319-ac6283a0709c",
+     :block/properties nil,
+     :block/format :markdown,
+     :block/children
+     [{:block/id #uuid "654df98a-5dc2-444d-8970-43b6def10e11",
+       :block/properties nil,
+       :block/format :markdown,
+       :block/children [],
+       :block/content
+       "Pointer werden in eindimensionales Array eingetragen und enthalten Speicheradresse auf z.B. strings"}
+      {:block/id #uuid "654dfa34-d7fc-4fa3-b5bb-2833b0f14c2f",
+       :block/properties nil,
+       :block/format :markdown,
+       :block/children [],
+       :block/content
+       "Pointer müssen zum Sortieren nur \"umgehängt\" werden"}
+      {:block/id #uuid "654dfa6a-f756-4fdd-a390-54abf60d0afc",
+       :block/properties nil,
+       :block/format :markdown,
+       :block/children [],
+       :block/content
+       "häufige Anwendung für Vektoren die unterschiedlich lange Strings bilden"}],
+     :block/content "Besondere Art Vektoren von Zeigern"}
+    {:block/id #uuid "654dfb8f-d666-47e5-aa55-25cb4709daa8",
+     :block/properties nil,
+     :block/format :markdown,
+     :block/children [],
+     :block/content ""}
+    {:block/id #uuid "654dfb92-426b-4ffa-8aae-837bf0b672a0",
+     :block/properties nil,
+     :block/format :markdown,
+     :block/children [],
+     :block/content ""}
+    {:block/id #uuid "6543d504-0e24-4e18-8165-e7eaa0259a57",
+     :block/properties nil,
+     :block/format :markdown,
+     :block/children [],
+     :block/content "#[[Pointer in C]]"}
+    {:block/id #uuid "6543d513-0555-455c-bfec-c8e03e96b814",
+     :block/properties nil,
+     :block/format :markdown,
+     :block/children [],
+     :block/content ""})}
+  {:block/id #uuid "6544c625-ed33-4754-9a24-5bc0fd29e9c4",
+   :block/page-name "Äquvialenz von Array- und Pointer-Notation",
+   :block/properties nil,
+   :block/format :markdown,
+   :block/children
+   ({:block/id #uuid "6544c625-9956-426d-81f0-3009bfb22f0b",
+     :block/properties nil,
+     :block/format :markdown,
+     :block/children [],
+     :block/content
+     "Man kann mithilfe von Pointer von Element zu Element springen"}
+    {:block/id #uuid "6544c6c2-bd02-492c-8bfb-6cc16238ec5d",
+     :block/properties nil,
+     :block/format :markdown,
+     :block/children
+     [{:block/id #uuid "6544c6ca-e3f6-49cc-ac43-56734f4ae3e3",
+       :block/properties nil,
+       :block/format :markdown,
+       :block/children [],
+       :block/content "alpha[i] = *(alpha+i)"}
+      {:block/id #uuid "6544c6e3-1c08-4d07-80d3-ad267bc1ddcb",
+       :block/properties nil,
+       :block/format :markdown,
+       :block/children [],
+       :block/content
+       "(pointer + i) springt zum nächsten Objekt, genau wie pointer[i]"}],
+     :block/content "Beispiel, alpha ist ein Vektor:"}
+    {:block/id #uuid "6544c651-cf51-427e-94c3-7d1ce799ab06",
+     :block/properties nil,
+     :block/format :markdown,
+     :block/children [],
+     :block/content ""}
+    {:block/id #uuid "6544c9db-7224-4448-955d-ee59bd3b4118",
+     :block/properties nil,
+     :block/format :markdown,
+     :block/children
+     [{:block/id #uuid "6544c9e9-345d-400a-9faf-e807b8137c8b",
+       :block/properties nil,
+       :block/format :markdown,
+       :block/children [],
+       :block/content
+       "Vektornamen sind gleich zur Speicheradresse und man vergleicht mit arr1 == arr2 nur die Speicheradresse"}
+      {:block/id #uuid "6544ca15-b8ba-4d92-80c1-89a8893b1665",
+       :block/properties nil,
+       :block/format :markdown,
+       :block/children
+       [{:block/id #uuid "6544ca1b-f96a-406b-a0cb-902f023c348e",
+         :block/properties nil,
+         :block/format :markdown,
+         :block/children [],
+         :block/content "for schleife"}
+        {:block/id #uuid "6544ca22-a290-4b0c-ab0f-de47d88f36bc",
+         :block/properties nil,
+         :block/format :markdown,
+         :block/children [],
+         :block/content "Funktion strcmp (import über string.h)"}],
+       :block/content "Lösungen"}],
+     :block/content "Vergleiche von Arrays"}
+    {:block/id #uuid "6544cabd-de94-429b-8b7b-f16b61e6ad89",
+     :block/properties nil,
+     :block/format :markdown,
+     :block/children [],
+     :block/content ""}
+    {:block/id #uuid "6544c7d7-73dd-4b29-9273-0523841e9c88",
+     :block/properties nil,
+     :block/format :markdown,
+     :block/children [],
+     :block/content ""}
+    {:block/id #uuid "6544c7d8-a6b9-4d56-a206-adda1807a084",
+     :block/properties nil,
+     :block/format :markdown,
+     :block/children [],
+     :block/content ""}
+    {:block/id #uuid "6544c651-1d29-4b61-850c-24b2d59fb569",
+     :block/properties nil,
+     :block/format :markdown,
+     :block/children [],
+     :block/content "#Zeigerarithmetik #[[Arrays in C]]"})}
+  {:block/id #uuid "65524ae2-b7e4-47c4-a361-97d74363e6d8",
+   :block/page-name "Präporzessor",
+   :block/properties nil,
+   :block/format :markdown,
+   :block/children
+   ({:block/id #uuid "65524af1-d402-4158-bb35-c73cfe7b653c",
+     :block/properties nil,
+     :block/format :markdown,
+     :block/children [],
+     :block/content
+     "läuft über den Compilecode nocheinmal drüber, als Textersetzung"}
+    {:block/id #uuid "65524ae2-1c82-4950-9a14-77a4fd2ff2c4",
+     :block/properties nil,
+     :block/format :markdown,
+     :block/children
+     [{:block/id #uuid "65524aed-975b-4341-8303-25ba09a96817",
+       :block/properties nil,
+       :block/format :markdown,
+       :block/children [],
+       :block/content "Einfügen von Dateien (mit include)"}
+      {:block/id #uuid "65524b27-3149-4b4a-8f4c-84ea40fe5edc",
+       :block/properties nil,
+       :block/format :markdown,
+       :block/children [],
+       :block/content "Ersetzen von Text (mit define)"}
+      {:block/id #uuid "65524b34-a800-4125-9c04-f6622b43fdb3",
+       :block/properties nil,
+       :block/format :markdown,
+       :block/children [],
+       :block/content "bedingte Kompilierung"}],
+     :block/content "Aufgaben"}
+    {:block/id #uuid "65524b59-ebd7-4fad-bb7b-b863b2dfadbd",
+     :block/properties nil,
+     :block/format :markdown,
+     :block/children [],
+     :block/content
+     "Präprozessor-Befehl endet mit Zeilende-Zeichen, mit \\ kann das Zeilenende entwertet werden um einen Befehl länger zu schreiben"}
+    {:block/id #uuid "65524b99-0619-46f5-83ca-8a99c2614a23",
+     :block/properties nil,
+     :block/format :markdown,
+     :block/children [],
+     :block/content ""})}
+  {:block/id #uuid "6543fbf5-b083-4758-b5c4-36bbaf3de512",
+   :block/page-name "Zeigerarithmetik",
+   :block/properties nil,
+   :block/format :markdown,
+   :block/children
+   ({:block/id #uuid "6543fbf5-f287-4bd7-a009-620efc8e716d",
+     :block/properties nil,
+     :block/format :markdown,
+     :block/children
+     [{:block/id #uuid "6544c423-a3a7-47ca-9ca8-718bba835ff6",
+       :block/properties nil,
+       :block/format :markdown,
+       :block/children
+       [{:block/id #uuid "6544c42a-bc73-4a8f-8681-0c96734191b1",
+         :block/properties nil,
+         :block/format :markdown,
+         :block/children [],
+         :block/content
+         "Zeiger dürfen Zeigervariablen zugewiesen werden"}
+        {:block/id #uuid "6544c43f-f106-4ae0-85e8-45544c8cf179",
+         :block/properties nil,
+         :block/format :markdown,
+         :block/children [],
+         :block/content
+         "Datentypen müssen übereinstimmen, außer Zeiger vom Typ \"void *\", diese dürfen nur anderen Datentypen zugeordnet werden. Selbes gilt für den NULL-Pointer, ebenfalls jeden anderen Zeiger zugewiesen werden kann."}],
+       :block/content "Zuweisung"}
+      {:block/id #uuid "6544c4ee-fd9c-4519-90b5-b0c97120db9b",
+       :block/properties nil,
+       :block/format :markdown,
+       :block/children
+       [{:block/id #uuid "6544c4fa-1f21-40a6-84fa-31ac638331f5",
+         :block/properties nil,
+         :block/format :markdown,
+         :block/children
+         [{:block/id #uuid "6544c52f-00b8-46ca-afe7-e90ed0e50a11",
+           :block/properties nil,
+           :block/format :markdown,
+           :block/children [],
+           :block/content
+           "Z.B: ein int pointer wird mit einem float Pointer um 1 erhöht -> nächstes float Objekt wird gesucht und darauf wird jetzt gezeigt"}],
+         :block/content
+         "Zeiger können unter bestimmten Voraussetzungen voneinander addiert, substrahiert werden. Dabei ist diese Operation inteligent"}
+        {:block/id #uuid "6544c583-3043-4126-9c5c-6a8cf86d19a6",
+         :block/properties nil,
+         :block/format :markdown,
+         :block/children [],
+         :block/content ""}],
+       :block/content "Addition und Substraktion"}],
+     :block/content "Mögliche zulässige Operationen für Zeiger:"}
+    {:block/id #uuid "6543fbf7-6c57-401a-948b-6e42c4b8222b",
+     :block/properties nil,
+     :block/format :markdown,
+     :block/children
+     [{:block/id #uuid "6544c5d9-9574-4b2a-8a96-552913487faf",
+       :block/properties nil,
+       :block/format :markdown,
+       :block/children
+       [{:block/id #uuid "6544c5e2-0601-4ede-89b5-76f867ecd2ca",
+         :block/properties nil,
+         :block/format :markdown,
+         :block/children [],
+         :block/content
+         "Pointer können auf Gleichheit, Ungleichheit und größer, kleiner verglichen werden"}],
+       :block/content "Vergleiche"}
+      {:block/id #uuid "6544c607-ebd3-4a39-ab56-67fe7340f571",
+       :block/properties nil,
+       :block/format :markdown,
+       :block/children [],
+       :block/content ""}],
+     :block/content ""}
+    {:block/id #uuid "6543fbf7-91ad-4481-b8e7-2b9ea191d5c2",
+     :block/properties nil,
+     :block/format :markdown,
+     :block/children [],
+     :block/content "#[[Pointer in C]]"})}
+  {:block/id #uuid "6564bdcd-1ee9-4bf7-be2f-c894f4d091eb",
+   :block/page-name "Typumwandlung",
+   :block/properties nil,
+   :block/format :markdown,
+   :block/children
+   ({:block/id #uuid "6564bdcd-84f3-4395-a910-6de32b3156c8",
+     :block/properties nil,
+     :block/format :markdown,
+     :block/children [],
+     :block/content "Wenig Klausurrelevant"}
+    {:block/id #uuid "6564bdde-e035-402b-aa34-600dd5021759",
+     :block/properties nil,
+     :block/format :markdown,
+     :block/children [],
+     :block/content
+     "In einigen Fällen selbständige Typumwandlung vom Compiler"}
+    {:block/id #uuid "6564be04-4b8d-43ef-a883-87dff4ed359d",
+     :block/properties nil,
+     :block/format :markdown,
+     :block/children
+     [{:block/id #uuid "6564bebb-60b7-465f-b81f-d04141d30573",
+       :block/properties nil,
+       :block/format :markdown,
+       :block/children [],
+       :block/content
+       "Jeder Datentyp der kleiner als int ist, wird beim laden in die ALU zu einem Integer umgewandelt wird"}],
+     :block/content "Integer Erweiterung"}
+    {:block/id #uuid "6564bedc-5ad8-4eb5-b2d6-8c53e68d0146",
+     :block/properties nil,
+     :block/format :markdown,
+     :block/children
+     [{:block/id #uuid "6564bf5c-994a-4119-8cd9-61ea74a91e8a",
+       :block/properties nil,
+       :block/format :markdown,
+       :block/children [],
+       :block/content
+       "Alle arithmetischen Typen sind untereinander verträglich und Zeiger auf void -> automatische Umwandlung"}],
+     :block/content "Implizierte Typumwandlung"}
+    {:block/id #uuid "6564c081-b9cd-445e-bf2e-19f02db1b6b6",
+     :block/properties nil,
+     :block/format :markdown,
+     :block/children
+     [{:block/id #uuid "6564c0ca-4393-4860-9537-0583c5c7364f",
+       :block/properties nil,
+       :block/format :markdown,
+       :block/children [],
+       :block/content
+       "Festlegen in welchen Typen umgewandelt werden soll"}],
+     :block/content "Explizite Typumwandlung"}
+    {:block/id #uuid "6564c315-d0bb-464e-be8a-e1d20bf9b8ff",
+     :block/properties nil,
+     :block/format :markdown,
+     :block/children [],
+     :block/content ""}
+    {:block/id #uuid "6564c316-a10c-4d5c-8b47-15a6716c0899",
+     :block/properties nil,
+     :block/format :markdown,
+     :block/children [],
+     :block/content "#Home"})}
+  {:block/id #uuid "6543d2fd-2064-46ac-b320-00c6d96f2759",
+   :block/page-name "6543d2fd-2064-46ac-b320-00c6d96f2759",
+   :block/properties
+   {:ls-type :whiteboard-page,
+    :logseq.tldraw.page
+    {:id "6543d2fd-2064-46ac-b320-00c6d96f2759",
+     :name "6543d2fd-2064-46ac-b320-00c6d96f2759",
+     :bindings {},
+     :nonce 1,
+     :assets [],
+     :shapes-index ()}},
+   :block/children [{:block/children ()}]}
+  {:block/id #uuid "6544cee6-071d-4b20-8f99-f1d84066e10c",
+   :block/page-name "Mehrdimensionale Felder",
+   :block/properties nil,
+   :block/format :markdown,
+   :block/children
+   ({:block/id #uuid "6544cee6-d8f5-4b48-8475-b5d3a226c4f2",
+     :block/properties nil,
+     :block/format :markdown,
+     :block/children
+     [{:block/id #uuid "6544cf35-e9fa-4f42-bd15-36e715c873db",
+       :block/properties nil,
+       :block/format :markdown,
+       :block/children [],
+       :block/content "Bsp: int alpha[3][4]"}
+      {:block/id #uuid "6544cefb-a2db-4ebc-9a4d-bd25a4a16e0d",
+       :block/properties nil,
+       :block/format :markdown,
+       :block/children [],
+       :block/content "zuweisung durch z.B. alpha[1] [3] = 6;"}],
+     :block/content
+     "Mehrdimensionale Arrays, die aus mehreren eindimensionale Arrays besteht"}
+    {:block/id #uuid "6544cf98-489a-48eb-8fa2-3cb432260608",
+     :block/properties nil,
+     :block/format :markdown,
+     :block/children [],
+     :block/content
+     "Für Vearbeitung bieten sich geschachtelte for schleifen an"}
+    {:block/id #uuid "6544d01f-d7ec-4310-818e-f242fe966469",
+     :block/properties nil,
+     :block/format :markdown,
+     :block/children [],
+     :block/content
+     "Feldgröße muss bei Funktionsübergabe angegeben werden"}
+    {:block/id #uuid "6544cf9b-a096-4f4b-9293-3e3e6fc12ab6",
+     :block/properties nil,
+     :block/format :markdown,
+     :block/children [],
+     :block/content ""}
+    {:block/id #uuid "6544cefb-2def-403c-9f2f-cd70b4e7a4ba",
+     :block/properties nil,
+     :block/format :markdown,
+     :block/children [],
+     :block/content "#[[Arrays in C]]"})}
+  {:block/id #uuid "65479853-f7a0-4646-bd9d-9ae41be6834c",
+   :block/page-name "Home",
+   :block/properties {:exclude-from-graph-view true},
+   :block/format :markdown,
+   :block/children
+   ({:block/id #uuid "65479853-3e7c-46c4-80b9-40716794d247",
+     :block/properties {:exclude-from-graph-view true},
+     :block/format :markdown,
+     :block/children [],
+     :block/content ""}
+    {:block/id #uuid "6547985e-adf2-4c25-a7b9-e134d733e19e",
+     :block/properties nil,
+     :block/format :markdown,
+     :block/children [],
+     :block/content ""}
+    {:block/id #uuid "65479886-8f21-4897-b6e7-1870381c7db3",
+     :block/properties nil,
+     :block/format :markdown,
+     :block/children
+     [{:block/id #uuid "6547988b-884f-4cc3-b248-474ffc58404d",
+       :block/properties nil,
+       :block/format :markdown,
+       :block/children [],
+       :block/content "[[Pointer in C]]"}
+      {:block/id #uuid "654798a7-2ead-429d-8fa8-5ea3cb6d5f4c",
+       :block/properties nil,
+       :block/format :markdown,
+       :block/children [],
+       :block/content "[[Komplexe Datentypen]]"}
+      {:block/id #uuid "65575a44-c805-4b0d-b0c4-a92c96ffce4f",
+       :block/properties nil,
+       :block/format :markdown,
+       :block/children [],
+       :block/content "[[Präporzessor]]"}
+      {:block/id #uuid "65575a4b-945d-427d-b37b-a68e946dab25",
+       :block/properties nil,
+       :block/format :markdown,
+       :block/children [],
+       :block/content "[[Bit-Operatoren]]"}
+      {:block/id #uuid "65575a51-a552-43e8-bb37-2841229c75c3",
+       :block/properties nil,
+       :block/format :markdown,
+       :block/children [],
+       :block/content "[[Dynamische Speicherzuweisung]]"}
+      {:block/id #uuid "65575a56-5d21-49f4-9aef-f3c3db1c92ff",
+       :block/properties nil,
+       :block/format :markdown,
+       :block/children [],
+       :block/content ""}
+      {:block/id #uuid "65523c24-1222-4133-a574-30da395a9509",
+       :block/properties nil,
+       :block/format :markdown,
+       :block/children [],
+       :block/content ""}],
+     :block/content "Overview"}
+    {:block/id #uuid "6547985e-1f21-4ab9-b361-5bc4090f7190",
+     :block/properties nil,
+     :block/format :markdown,
+     :block/children [],
+     :block/content "Notes"}
+    {:block/id #uuid "654798ae-c0f4-4bef-989d-4c13d0f1a724",
+     :block/properties nil,
+     :block/format :markdown, 
+     :block/children [], 
+     :block/content ""})})}
